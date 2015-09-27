@@ -56,12 +56,14 @@
 
             $(tabs).children("ul").children("li").click(function(){
                 showPage(parseInt($(this).attr("data-page")));
+                var calcs = new Calcinit({tabs:parseInt($(this).attr("data-cost"))});
             });
         };
         return this.each(createTabs);
     };
 })(jQuery);
 $(document).ready(function(){
+    var initcalc = new Calcinit();
     var price =$('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
@@ -70,3 +72,4 @@ $(document).ready(function(){
     tabs.pushpin({ top: tabs.offset().top });
 
 });
+

@@ -7,4 +7,5 @@
 /*
  * Custom
  */
+//= partials/calc.js
 //= partials/app.js

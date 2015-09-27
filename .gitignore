@@ -4,3 +4,4 @@
 /stylesheets/*
 /build/*
 /node_modules/*
+/.idea/*
