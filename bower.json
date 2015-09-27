@@ -1,8 +1,20 @@
 {
-  "name": "foundation-compass-app",
+  "name": "gidrocar",
   "version": "0.0.1",
-  "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
-  }
+    "Materialize": "materialize#~0.97.1",
+    "normalize.css": "*"
+  },
+  "authors": [
+    "Kravtsov D.S. <serdimoa@gmail.com>"
+  ],
+  "description": "gidrocar site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
