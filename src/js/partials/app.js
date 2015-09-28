@@ -1,37 +1,34 @@
-(function($){
-    jQuery.fn.lightTabs = function(options){
+(function ($) {
+    jQuery.fn.lightTabs = function (options) {
 
-        var createTabs = function(){
+        var createTabs = function () {
             tabs = this;
             i = 0;
 
-            showPage = function(i){
+            showPage = function (i) {
                 $(tabs).children("div").children("div").hide();
                 $(tabs).children("div").children("div").eq(i).show();
                 $(tabs).children("ul").children("li").removeClass("active");
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
             };
 
-            hidePage=function(i){
-                $(tabs).children("div").children("div").hide();
+            hidePage = function (i) {
+
+                $(tabs).children("div").children("div").hide(0);
                 $(tabs).children("div").removeClass("borders");
 
             };
 
             delActive = function (i) {
+
                 $(tabs).children("ul").children("li").removeClass("active");
+
             };
 
             selectPage = function (i) {
-                $(tabs).children("div").children("div").hide();
 
-
-
-                    $(tabs).children("div").addClass("borders");
-
-
-                $(tabs).children("div").children("div").eq(i).show();
-
+                $(tabs).children("div").addClass("borders");
+                $(tabs).children("div").children("div").eq(i).show(1000);
 
             };
 
@@ -40,36 +37,37 @@
             hidePage(0);
 
 
-            $(tabs).children("ul").children("li").each(function(index, element){
+            $(tabs).children("ul").children("li").each(function (index, element) {
                 $(element).attr("data-page", i);
                 i++;
             });
 
-            $(tabs).children("ul").children("li").hover(function(){
-                if(parseInt($(this).attr("data-page"))!=4)
-                selectPage(parseInt($(this).attr("data-page")));
+            $(tabs).children("ul").children("li").hover(function () {
+                if (parseInt($(this).attr("data-page")) != 4)
+                    selectPage(parseInt($(this).attr("data-page")));
             });
 
-            $(tabs).children("ul").children("li").mouseout(function(){
+            $(tabs).children("ul").children("li").mouseout(function () {
                 hidePage(parseInt($(this).attr("data-page")));
             });
 
-            $(tabs).children("ul").children("li").click(function(){
+            $(tabs).children("ul").children("li").click(function () {
                 showPage(parseInt($(this).attr("data-page")));
-                var calcs = new Calcinit({tabs:parseInt($(this).attr("data-cost"))});
+                var calcs = new Calcinit();
+                calcs.init(parseInt($(this).attr("data-id")));
             });
         };
         return this.each(createTabs);
     };
 })(jQuery);
-$(document).ready(function(){
+$(document).ready(function () {
     var initcalc = new Calcinit();
-    var price =$('.price');
+    var price = $('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
 
-    price.pushpin({ top: price.offset().top,offset:45 });
-    tabs.pushpin({ top: tabs.offset().top });
+    price.pushpin({top: price.offset().top, offset: 45});
+    tabs.pushpin({top: tabs.offset().top});
 
 });
 
