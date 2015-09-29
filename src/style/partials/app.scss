@@ -24,6 +24,9 @@ html{
     padding: 20px;
 
   }
+  #content{
+    display: none;
+  }
 }
 ul{
   li.pLeftLi{
@@ -46,7 +49,7 @@ ul{
 
 }
 .borders{
-  border: 3px solid #51bfed;
+  border-bottom:3px solid #51bfed;
 
 }
 
@@ -96,6 +99,21 @@ ul{
 
 [type=checkbox]+label:before{
   margin-top:0;
+
+}
+[type=checkbox]+label {
+  border-bottom: 0.07em dotted #5A5A5A;
+
+}
+
+
+label{
+  width: 100%;
+}
+label::after{
+  font: normal normal normal 14px/1 FontAwesome;
+  content: attr(data-cost)' \f158';
+  float: right;
 }
 
 .price{
@@ -103,17 +121,23 @@ ul{
   border: #51bfed 3px solid;
   cursor: pointer;
   padding: 15px;
+opacity: 0;
   z-index: 2;
+  margin-top: -12px;
   margin-right: 3px;
   background: #fff;
   .price-before{
     text-decoration: line-through;
     color: #e00d0d;
     font-size: .7em;
+    display:none;
 
   }
   .price-after{
     color: #34A853;
+  }
+  .tooltipped{
+    margin-top:0px;
   }
   i{
     font-size: .5em;

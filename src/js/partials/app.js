@@ -52,6 +52,8 @@
             });
 
             $(tabs).children("ul").children("li").click(function () {
+                $('#content').show(1000);
+                $('.price').css( "opacity", 1 );
                 showPage(parseInt($(this).attr("data-page")));
                 var calcs = new Calcinit();
                 calcs.init(parseInt($(this).attr("data-id")));
@@ -66,7 +68,7 @@ $(document).ready(function () {
     var tabs = $('.tabs');
     tabs.lightTabs();
 
-    price.pushpin({top: price.offset().top, offset: 45});
+    price.pushpin({top: price.offset().top, offset: 54});
     tabs.pushpin({top: tabs.offset().top});
 
 });
