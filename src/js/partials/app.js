@@ -67,6 +67,7 @@ $(document).ready(function () {
     var price = $('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
+    $(".button-collapse").sideNav();
 
     price.pushpin({top: price.offset().top, offset: 54});
     tabs.pushpin({top: tabs.offset().top});
