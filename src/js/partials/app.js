@@ -62,15 +62,27 @@
         return this.each(createTabs);
     };
 })(jQuery);
-$(document).ready(function () {
+var calculate = function(){
     var initcalc = new Calcinit();
     var price = $('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
     $(".button-collapse").sideNav();
-
     price.pushpin({top: price.offset().top, offset: 54});
     tabs.pushpin({top: tabs.offset().top});
+};
+$(document).ready(function () {
+
+    if($("#home")){
+        var menu = $(".menu");
+        $(".parallax").parallax();
+        menu.pushpin({top: menu.offset().top});
+        console.log("home");
+    }
+    else{
+        console.log("other");
+        calculate();
+    }
 
 });
 

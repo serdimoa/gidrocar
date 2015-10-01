@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../../fonts/Blogger%20Sans/BloggerSans.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Blogger%20Sans/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../fonts/Blogger%20Sans/BloggerSans.woff') format('woff'), /* Modern Browsers */ url('../../fonts/Blogger%20Sans/BloggerSans.ttf') format('truetype'), /* Safari, Android, iOS */ url('../../fonts/Blogger%20Sans/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -36,7 +45,36 @@ nav {
 
   }
 }
+.menu.pinned{
+  width: 100%;
+  z-index: 10;
+}
 
+#index-banner{
+  h1{
+    font-family: "BloggerSans", Georgia, sans-serif;
+  }
+  h5{
+
+  }
+}
+#time h2{
+  //font-family: "BloggerSans", Georgia, sans-serif;
+
+}
+.parallax-container{
+  background-color: rgba(0, 188, 212, 0.69);
+  height: 40pc;
+}
+.text-white{
+  color:#fff;
+}
+.parallax img{
+  //transform:translate3d(0px, 590.466px, 0px) !important;
+  left:50%;
+  bottom: 0;
+
+}
 .card {
   .card-title {
     line-height: 1.2pc !important;
@@ -161,7 +199,17 @@ label::after {
   content: attr(data-cost) ' \f158';
   float: right;
 }
-
+.section h3{
+  text-align: center;
+  background: url("../../img/арома.svg") no-repeat center;
+  height: 100px;
+  background-size: contain;
+  i{
+    color: #fff;
+    margin-top: 28px;
+    font-size: 58px;
+  }
+}
 .price {
   font-size: 3em;
   border: #51bfed 3px solid;

@@ -12,32 +12,33 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
+    fontgen = require("gulp-fontgen"),
     reload = browserSync.reload;
 
 var path = {
-        build: { //Тут мы укажем куда складывать готовые после сборки файлы
-            html: 'build/',
-            js: 'build/js/',
-            css: 'build/css/',
-            img: 'build/img/',
-            fonts: 'build/fonts/'
-        },
-        src: { //Пути откуда брать исходники
-            html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-            js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
-            style: 'src/style/main.scss',
-            img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-            fonts: ['src/fonts/**/*.*','bower_components/materialize/font/**/*.*']
-        },
-        watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-            html: 'src/**/*.html',
-            js: 'src/js/**/*.js',
-            style: 'src/style/**/*.scss',
-            img: 'src/img/**/*.*',
-            fonts: 'src/fonts/**/*.*'
-        },
-        clean: './build'
-    };
+    build: { //Тут мы укажем куда складывать готовые после сборки файлы
+        html: 'build/',
+        js: 'build/js/',
+        css: 'build/css/',
+        img: 'build/img/',
+        fonts: 'build/fonts/'
+    },
+    src: { //Пути откуда брать исходники
+        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+        js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        style: 'src/style/main.scss',
+        img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+        fonts: ['src/fonts/**/*.*', 'bower_components/materialize/font/**/*.*']
+    },
+    watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+        html: 'src/**/*.html',
+        js: 'src/js/**/*.js',
+        style: 'src/style/**/*.scss',
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*'
+    },
+    clean: './build'
+};
 
 var config = {
     server: {
@@ -89,9 +90,16 @@ gulp.task('image:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('fonts:build', function() {
+gulp.task('fonts:build', function () {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts));
+});
+
+gulp.task("fontbuilder", function () {
+
+    gulp.src(path.src.fonts)
+        .pipe(fontgen({dest:path.build.fonts}))
+        .pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
@@ -102,20 +110,20 @@ gulp.task('build', [
     'image:build'
 ]);
 
-gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
+gulp.task('watch', function () {
+    watch([path.watch.html], function (event, cb) {
         gulp.start('html:build');
     });
-    watch([path.watch.style], function(event, cb) {
+    watch([path.watch.style], function (event, cb) {
         gulp.start('style:build');
     });
-    watch([path.watch.js], function(event, cb) {
+    watch([path.watch.js], function (event, cb) {
         gulp.start('js:build');
     });
-    watch([path.watch.img], function(event, cb) {
+    watch([path.watch.img], function (event, cb) {
         gulp.start('image:build');
     });
-    watch([path.watch.fonts], function(event, cb) {
+    watch([path.watch.fonts], function (event, cb) {
         gulp.start('fonts:build');
     });
 });

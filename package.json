@@ -16,6 +16,11 @@
     "gulp-uglify": "^1.4.0",
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^4.2.0",
-    "rimraf": "^2.4.3"
+    "rimraf": "^2.4.3",
+    "gulp-fontgen": "^0.1.5"
+
+  },
+  "devDependencies": {
+    "fontfacegen": "^0.1.6"
   }
 }
