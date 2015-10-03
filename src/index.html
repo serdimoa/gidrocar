@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html id="home">
-<head lang="ru">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//= template/header.html
 
-    <meta charset="UTF-8">
-    <title>Все будет хорошо</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic'
-    rel='stylesheet' type='text/css'>
-
-
-    <link rel="stylesheet" href="css/main.css" media="screen,projection"/>
-
-
-</head>
-<body>
-<section class="menu">
-        <nav class="">
-        <div class=" nav-wrapper container valign-wrapper">
-            <a href="#" class="brand-logo left "><img src="img/cdr.png" alt="logo" class="valign responsive-img"/></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i>menu</a>
-            <ul class=" hide-on-med-and-down valign right-align right ">
-                <li><a href="#">Главная</a></li>
-                <li><a href="calc.html">Калькулятор</a></li>
-                <li><a href="collapsible.html">Контакты</a></li>
-            </ul>
-            <ul class="side-nav " id="mobile-demo">
-                <li><a href="#">Главная</a></li>
-                <li><a href="calc.html">Калькулятор</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </div>
-        </nav>
-
-</section>
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
@@ -50,7 +15,7 @@
 
         </div>
     </div>
-    <div class="parallax"><img src="img/parallax01.jpg" alt="Unsplashed background img 1" style=" "></div>
+    <div class="parallax"><img src="img/parallax01.jpg" alt="Unsplashed background img 1" style="display: block;"></div>
 </div>
 
 <div class="container" id="time">
@@ -60,13 +25,38 @@
             <div class="col s12 center">
                 <h3><i class="material-icons Medium ">query_builder</i></h3>
                 <h2>Мы ценим ваше время!</h2>
-                <p class="left-align light">Автомойка ГИДРОКАР-это первая профессиональная автомойка в городе Нижневартовске, на которой Ваш автомобиль обслуживают сразу два автомойщика, что значительно сокращает время предоставления услуги.</p>
+                <p class="center-align light flow-text">Автомойка <span>ГИДРОКАР</span> - это первая профессиональная автомойка в городе Нижневартовске, на которой Ваш автомобиль обслуживают сразу два автомойщика, что значительно сокращает время предоставления услуги.</p>
             </div>
         </div>
 
     </div>
-</div>
-<script src="js/main.js"></script>
+    <hr/>
 
-</body>
-</html>
+</div>
+<div class="container" id="calc">
+    <div class="section">
+        <div class="row">
+            <div class="col s12"><h4 class="center-align">На автомойке <span>ГИДРОКАР</span> вы получите самые качественные услуги для вашего авто по самым приятным ценам в городе.</h4></div>
+        </div>
+        <div class="row"><a class="waves-effect waves-light btn red btn-large center-pos" href="calc.html">Калькулятор цен</a>
+        </div>
+    </div>
+    <hr/>
+
+</div>
+<div class="container" id="clean">
+    <div class="section">
+        <div class="row valign-wrapper">
+            <div class="col s6"><img class="responsive-img" src="img/clean.png" alt="clean"/></div>
+            <div class="col s6"><h4 class="valign ">После посещения обычной автомойки ваш автомобиль недостаточно чистый? <br/>На стёклах мутные разводы?
+                <br/>На приборной панели остаётся пыль?</h4></div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align flow-text">На автомойке <span>ГИДРОКАР</span> наши специалисты обслуживают Ваш автомобиль с соблюдением всех технологий мытья, чистки, сушки, уборки и других видов услуг. Мы используем автохимию только проверенных производителей!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer.html

@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head lang="ru">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <meta charset="UTF-8">
-    <title>Все будет хорошо</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic'
-          rel='stylesheet' type='text/css'>
-
-
-    <link rel="stylesheet" href="css/main.css" media="screen,projection"/>
-
-
-</head>
-<body>
+//= template/header.html
+<div class="mar-top"></div>
 
 <div class="container">
     <div class="row">
@@ -29,38 +13,48 @@
                         <div class="row">
 
                             <div class="tabs">
-                                <ul>
-                                    <li data-id="1">мини и малый класс</li>
-                                    <li data-id="2">Средний класс</li>
-                                    <li data-id="3">Кросс и бизнес класс</li>
-                                    <li data-id="4">Внедорожники, вэны, пикапы</li>
-                                    <li data-id="5">Hummer</li>
+                                <ul class="">
+                                    <li data-id="1" class="tooltipped" data-position="bottom" data-delay="50"
+                                        data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo">мини и малый класс
+                                    </li>
+                                    <li data-id="2" class="tooltipped" data-position="bottom" data-delay="50"
+                                        data-tooltip=" Prius, Corolla, Camry, Jetta, BMW 3-5">
+                                        Средний класс
+                                    </li>
+                                    <li data-id="3" class="tooltipped" data-position="bottom" data-delay="50"
+                                        data-tooltip=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">
+                                        Кросс и бизнес класс
+                                    </li><li data-id="5">Hummer</li>
+                                    <li data-id="4" class="tooltipped" data-position="bottom" data-delay="50"
+                                        data-tooltip="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">
+                                        Внедорожники, вэны, пикапы
+                                    </li>
+
                                 </ul>
-                                <div class="col s10">
-                                    <div>
-                                        <span>
-                                            Все ВАЗы, Matiz, Spark, Yaris, Polo
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            Prius, Corolla, Camry, Jetta, BMW 3-5
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы
-                                        </span>
-                                    </div>
-                                </div>
+                                <!-- Dropdown Trigger -->
+                                <!--<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>-->
+
+                                <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
+                                <!--<ul id='dropdown1' class='dropdown-content'>-->
+                                    <!--<li data-id="1" class="tooltipped" data-position="bottom" data-delay="50"-->
+                                        <!--data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo">мини и малый класс-->
+                                    <!--</li>-->
+                                    <!--<li data-id="2" class="tooltipped" data-position="bottom" data-delay="50"-->
+                                        <!--data-tooltip=" Prius, Corolla, Camry, Jetta, BMW 3-5">-->
+                                        <!--Средний класс-->
+                                    <!--</li>-->
+                                    <!--<li data-id="3" class="tooltipped" data-position="bottom" data-delay="50"-->
+                                        <!--data-tooltip=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">-->
+                                        <!--Кросс и бизнес класс-->
+                                    <!--</li><li data-id="5">Hummer</li>-->
+                                    <!--<li data-id="4" class="tooltipped" data-position="bottom" data-delay="50"-->
+                                        <!--data-tooltip="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">-->
+                                        <!--Внедорожники, вэны, пикапы-->
+                                    <!--</li>-->
+                                <!--</ul>-->
 
                             </div>
-                            <div class="col s9">
+                            <div class="col l9 m9 s12 ">
 
                                 <div id="content" class="content">
                                     <div class="row">
@@ -70,17 +64,26 @@
                                             </div>
 
                                             <ul class="complex">
-                                                <li class="left pLeftLi"><input  type="radio" name="complex"
-                                                                                title="complex-1"
-                                                                                id="complex-1"/><label
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-1"
+                                                           id="complex-1"/><label
                                                         for="complex-1">Комплекс mini</label></li>
-                                                <li class="left pLeftLi"><input type="radio" name="complex"
-                                                                                title="complex-2"
-                                                                                id="complex-2"/><label
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip=" Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-2"
+                                                           id="complex-2"/><label
                                                         for="complex-2">Комплекс midle</label></li>
-                                                <li class="left pLeftLi"><input type="radio" name="complex"
-                                                                                title="complex-3"
-                                                                                id="complex-3"/><label
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона + воск кузова + чернение резины">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-3"
+                                                           id="complex-3"/><label
                                                         for="complex-3">Комплекс maxi</label></li>
                                             </ul>
                                         </div>
@@ -114,35 +117,43 @@
                                     </ul>
                                     <div class="card-title">Салон</div>
                                     <ul class="salon">
-                                        <li><input type="checkbox" data-cost="200" id="salon-1" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-1"
+                                                   class="filled-in-box"/><label
                                                 for="salon-1">Уборка
                                             салона пылесосом</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-2" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-2"
+                                                   class="filled-in-box"/><label
                                                 for="salon-2">Влажная
                                             уборка панели</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-3" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-3"
+                                                   class="filled-in-box"/><label
                                                 for="salon-3">Влажная
                                             уборка салона </label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-4" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-4"
+                                                   class="filled-in-box"/><label
                                                 for="salon-4">Все
                                             стёкла</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-5" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-5"
+                                                   class="filled-in-box"/><label
                                                 for="salon-5">Уборка
                                             багажника пылесосом</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-6" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-6"
+                                                   class="filled-in-box"/><label
                                                 for="salon-6">Полироль
                                             пластика</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-7" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-7"
+                                                   class="filled-in-box"/><label
                                                 for="salon-7">Мойка
                                             резиновых ковриков</label>
                                         </li>
-                                        <li><input type="checkbox" data-cost="200" id="salon-8" class="filled-in-box"/><label
+                                        <li><input type="checkbox" data-cost="200" id="salon-8"
+                                                   class="filled-in-box"/><label
                                                 for="salon-8">Стирка
                                             ворсовых ковриков (цена за 1 шт. С сушкой)</label>
                                         </li>
@@ -190,7 +201,7 @@
                                 </div>
 
                             </div>
-                            <div class="col s3">
+                            <div class="col s12 l3 m3 price-sm-hide">
                                 <div class="right">
                                     <div class="price">
                                         Итого
@@ -207,7 +218,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col s12 price-sm-show">
+                                    <div class="col s4 alls">Итого:</div>
+                                <div class="col s8">
+                                    <span class="price-before tooltipped center " data-position="left"
+                                         data-delay="50" data-tooltip="Цена без коплекса">
+                                        <span>0</span> <i class="fa fa-rub"></i>
+                                    </span>
+                                    <span class="price-after center">
+                                        <span>0</span> <i class="fa fa-rub"></i>
 
+                                    </span>
+                                    </div>
+
+                            </div>
                         </div>
 
                     </div>
@@ -224,7 +248,4 @@
 </div>
 
 //= template/footer.html
-<script src="js/main.js"></script>
 
-</body>
-</html>
