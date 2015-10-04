@@ -4,6 +4,9 @@
         var createTabs = function () {
             tabs = this;
             i = 0;
+            var calcs = new Calcinit();
+            calcs.init(parseInt(1));
+
 
             showPage = function (i) {
                 $(tabs).children("div").children("div").hide();
@@ -25,7 +28,6 @@
                 $('#content').show(1000);
                 $('.price').css("opacity", 1);
                 showPage(parseInt($(this).attr("data-page")));
-                var calcs = new Calcinit();
                 calcs.init(parseInt($(this).attr("data-id")));
             });
         };

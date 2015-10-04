@@ -1,7 +1,7 @@
 /bower_components/*
 /.sass-cache/*
 *.DS_Store
+/.idea
 /stylesheets/*
 /build/*
 /node_modules/*
-/.idea/*
