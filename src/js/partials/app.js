@@ -39,7 +39,7 @@ var calculate = function () {
     var price = $('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
-    price.pushpin({top: price.offset().top, offset: 154});
+    price.pushpin({top: price.offset().top, offset: 150});
     tabs.pushpin({top: tabs.offset().top,offset:100});
 };
 $(document).ready(function () {
@@ -47,7 +47,24 @@ $(document).ready(function () {
         edge: 'right', // Choose the horizontal origin
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 });
+    $("#owl-demo").owlCarousel({
 
+        navigation : false, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        pagination:false,
+            autoPlay:true,
+        transitionStyle : "goDown",
+
+        // "singleItem:true" is a shortcut for:
+        items : 1
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+
+    });
     var n = new Date().getFullYear();
     $("#year").text(n);
     var element = document.getElementById('index-banner');
