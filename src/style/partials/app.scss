@@ -74,21 +74,21 @@ nav {
   float: right;
   text-align: right;
   line-height: 0;
-  i{
+  i {
     font-weight: normal;
     font-variant: normal;
     font-style: normal;
     font-family: FontAwesome;
-    height: 1pc!important;
-    line-height: 3pc!important;
-    font-size: 1.4em!important;
-    display: inline!important;
+    height: 1pc !important;
+    line-height: 3pc !important;
+    font-size: 1.4em !important;
+    display: inline !important;
   }
-  .vk_menu{
+  .vk_menu {
     font-size: .7em;
   }
-  i:after{
-content: "\f189";
+  i:after {
+    content: "\f189";
 
   }
   a {
@@ -214,7 +214,7 @@ content: "\f189";
 
 }
 
-#owl-demo .item img{
+#owl-demo .item img {
   display: block;
   width: 100%;
   height: auto;
@@ -237,7 +237,7 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
   box-shadow: none;
   .card-title {
     line-height: 1.2pc !important;
-      max-width: 300px;
+    max-width: 300px !important;
     i {
       font-size: .5em;
 
@@ -259,12 +259,15 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
     display: none;
   }
 }
-.content .card-title{
+
+.content .card-title {
   max-width: 100%;
 }
-.width-100{
+
+.card-title.width-100 {
   max-width: 100% !important;
 }
+
 ul {
   li.pLeftLi {
     margin-right: 20px;
@@ -275,7 +278,18 @@ ul {
   top: -10px;
   position: relative;
 }
-
+.firmbtn{
+  background-color: #ffffff;
+  color: #51bfed;
+}
+.firmbtn-o{
+  color: #ffffff;
+  background-color: #51bfed;
+}
+.firmbtn:hover{
+  background-color: #4CAF50;
+  color: #fff;
+}
 .tabs {
   display: inline-block;
   width: auto;
@@ -375,10 +389,12 @@ label::after {
     font-size: 58px;
   }
 }
-.dropdown-button{
+
+.dropdown-button {
   width: 100%;
   display: none;
 }
+
 .price {
   font-size: 3em;
   border: #51bfed 3px solid;
@@ -386,7 +402,7 @@ label::after {
   padding: 15px;
   opacity: 0;
   z-index: 2;
-  margin-top: -54px;
+  margin-top: -104px;
   margin-right: 3px;
   background: #fff;
   .price-before {
@@ -410,7 +426,9 @@ label::after {
 footer p {
   font-weight: 300;
 }
-
+#ms-booking-button-container{
+  display: none;
+}
 .activemenu {
   border-bottom: 3px #50BFED solid;
 }
@@ -426,14 +444,37 @@ nav a.button-collapse, nav a.button-collapse i {
 }
 
 @media only screen and (max-width: 640px) {
-  .dropdown-button{
+
+  #ms-booking-button-container{
+    bottom: 0 !important;
+    top: auto !important;
     display: block;
   }
-  .maxs{
+  #index-banner{
+    height: auto;
+  }
+  .section {
+     margin-top: 0;
+    margin-bottom: 0;
+  }
+  [type=checkbox]+label {
+    /* line-height: 22px; */
+    border-bottom: none;
+  }
+  #phone {
+    font-size: .9em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+  .dropdown-button {
+    display: block;
+  }
+  .maxs {
     display: none;
   }
-  .contact_menu{
-    font-size:1em;
+  .contact_menu {
+    font-size: 1em;
   }
   .price-sm-hide {
     display: none;
@@ -445,6 +486,8 @@ nav a.button-collapse, nav a.button-collapse i {
     font-size: 3em;
     border: #51bfed 3px solid;
     cursor: pointer;
+    display: block;
+    opacity: 0;
     padding: 15px;
     z-index: 2;
     margin-top: -12px;
@@ -461,7 +504,7 @@ nav a.button-collapse, nav a.button-collapse i {
     }
     .price-after {
       color: #34A853;
-      font-size: .7em;
+      font-size: .5em;
     }
     .alls {
       font-size: 0.7em;
@@ -473,7 +516,9 @@ nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (min-width: 1025px) {
   .price-sm-show {
     display: none;
+    opacity: 0;
   }
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -482,7 +527,9 @@ nav a.button-collapse, nav a.button-collapse i {
     font-size: 6.2em;
 
   }
-
+  .tabs ul li {
+    padding: 10px 63px;
+  }
   .parallax-container {
     height: 60pc;
   }
@@ -499,7 +546,8 @@ nav a.button-collapse, nav a.button-collapse i {
     font-size: 3.7rem;
   }
 }
-.material-tooltip{
+
+.material-tooltip {
   max-width: 300px;
 }
 

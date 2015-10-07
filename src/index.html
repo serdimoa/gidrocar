@@ -9,7 +9,7 @@
             <h1 class="header center text-white">Профессиональная и Быстрая Мойка автомобилей</h1>
             <br/>
             <div class="row center">
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Онлайн-запись</a>
+                <a href="#" id="download-button" onclick="MSWidget.showIframe();" class="btn-large waves-effect waves-light firmbtn lighten-1">Онлайн-запись</a>
             </div>
             <br><br>
 
@@ -17,6 +17,7 @@
     </div>
     <div class="parallax"><img src="img/parallax01.jpg" alt="Unsplashed background img 1" style="display: block;"></div>
 </div>
+
 
 <div class="container" id="time">
     <div class="section">
@@ -38,7 +39,7 @@
         <div class="row">
             <div class="col s12"><h4 class="center-align">На автомойке <span>ГИДРОКАР</span> вы получите самые качественные услуги для вашего авто по самым приятным ценам в городе.</h4></div>
         </div>
-        <div class="row"><a class="waves-effect waves-light btn red btn-large center-pos" href="calc.html">Калькулятор цен</a>
+        <div class="row"><a class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos" href="calc.html">Калькулятор цен</a>
         </div>
     </div>
     <hr/>
@@ -66,5 +67,16 @@
     </div>
 </div>
     </div>
-
+<script src="https://yclients.com/js/ms.bookingwidget.js" type='text/javascript'></script>
+<script type="text/javascript" charset="utf-8">
+    var MSWidgetOptions = {
+        href: '30612/2/2',
+        host: 'https://yclients.com',
+        type: 'bottom',
+        lang: 'rus',
+        border_color: '',
+        main_color: '51C0EE'
+    };
+    MSWidget.initWidget(MSWidgetOptions);
+</script>
 //= template/footer.html

@@ -27,6 +27,7 @@
             $(tabs).children("ul").children("li").click(function () {
                 $('#content').show(1000);
                 $('.price').css("opacity", 1);
+                $('.price-sm-show').css("opacity", 1);
                 showPage(parseInt($(this).attr("data-page")));
                 calcs.init(parseInt($(this).attr("data-id")));
             });
@@ -39,11 +40,16 @@ var calculate = function () {
     var price = $('.price');
     var tabs = $('.tabs');
     tabs.lightTabs();
-    price.pushpin({top: price.offset().top, offset: 150});
-    tabs.pushpin({top: tabs.offset().top,offset:100});
+    price.pushpin({top: price.offset().top, offset: 180});
+    tabs.pushpin({top: tabs.offset().top,offset:97});
 };
 $(document).ready(function () {
-    $(".button-collapse").sideNav( {menuWidth: 300, // Default is 240
+
+    if(bowser.firefox){
+        $(".nav-wrapper img").css({"width":"200px"});
+    }
+    $("html").css({"padding-top":"0 !important"});
+    $(".button-collapse").sideNav( {menuWidth: 200, // Default is 240
         edge: 'right', // Choose the horizontal origin
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 });
@@ -95,3 +101,31 @@ $(document).ready(function () {
 
 });
 
+
+$(window).on('scroll', function () {
+    var tabs = $(".tabs");
+
+    var offset = 200;
+    if(offset>tabs.offset().top){
+        if(bowser.firefox) {
+            $(".tabs").css({"left": "0"});
+        }
+
+    }
+    else{
+        if(bowser.firefox) {
+            $(".tabs").css({"left": "18%"});
+        }
+    }
+    var scrollTop = $(this).scrollTop();
+    //console.log(offset);
+
+});
+document.onscroll=function () {
+    var avatarSourceBottom = $(".tabs").offsetTop + $(".tabs").offsetHeigh;
+    if(window.pageYOffset > avatarSourceBottom){
+
+
+    }
+
+}
