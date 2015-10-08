@@ -73,6 +73,7 @@ nav {
   font-family: "BloggerSans", serif;
   float: right;
   text-align: right;
+  max-width: 255px;
   line-height: 0;
   i {
     font-weight: normal;
@@ -380,7 +381,7 @@ label::after {
 
 .section h3 {
   text-align: center;
-  background: url("../../img/арома.svg") no-repeat center;
+  background: url("../img/арома.svg") no-repeat center;
   height: 100px;
   background-size: contain;
   i {
@@ -410,13 +411,12 @@ label::after {
     color: #e00d0d;
     font-size: .7em;
     display: none;
-
   }
   .price-after {
     color: #34A853;
   }
   .tooltipped {
-    margin-top: 0px;
+    margin-top: 0;
   }
   i {
     font-size: .5em;
