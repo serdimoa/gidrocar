@@ -1,12 +1,12 @@
+
 @font-face {
   font-family: 'BloggerSans';
-  src: url('../fonts/Blogger%20Sans/BloggerSans.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Blogger%20Sans/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Blogger%20Sans/BloggerSans.woff') format('woff'), /* Modern Browsers */ url('../fonts/Blogger%20Sans/BloggerSans.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Blogger%20Sans/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  src: url('../fonts/BloggerSans/BloggerSans.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/BloggerSans/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/BloggerSans/BloggerSans.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/BloggerSans/BloggerSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/BloggerSans/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
 }
-
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -123,7 +123,7 @@ nav {
   font-size: 1.5em;
   line-height: 1.4em;
   h4 {
-    font-family: "BloggerSans", Georgia, sans-serif;
+    font-family: "BloggerSans", "Open Sans", Georgia, sans-serif;
     color: #51C0EE;
     small {
       color: #272727;
@@ -279,18 +279,22 @@ ul {
   top: -10px;
   position: relative;
 }
-.firmbtn{
+
+.firmbtn {
   background-color: #ffffff;
   color: #51bfed;
 }
-.firmbtn-o{
+
+.firmbtn-o {
   color: #ffffff;
   background-color: #51bfed;
 }
-.firmbtn:hover{
+
+.firmbtn:hover {
   background-color: #4CAF50;
   color: #fff;
 }
+
 .tabs {
   display: inline-block;
   width: auto;
@@ -375,7 +379,7 @@ label {
 
 label::after {
   font: normal normal normal 14px/1 FontAwesome;
-  content: attr(data-cost) ' \f158';
+  content: attr(data-name) ' \f158';
   float: right;
 }
 
@@ -426,9 +430,11 @@ label::after {
 footer p {
   font-weight: 300;
 }
-#ms-booking-button-container{
+
+#ms-booking-button-container {
   display: none;
 }
+
 .activemenu {
   border-bottom: 3px #50BFED solid;
 }
@@ -445,19 +451,19 @@ nav a.button-collapse, nav a.button-collapse i {
 
 @media only screen and (max-width: 640px) {
 
-  #ms-booking-button-container{
+  #ms-booking-button-container {
     bottom: 0 !important;
     top: auto !important;
     display: block;
   }
-  #index-banner{
+  #index-banner {
     height: auto;
   }
   .section {
-     margin-top: 0;
+    margin-top: 0;
     margin-bottom: 0;
   }
-  [type=checkbox]+label {
+  [type=checkbox] + label {
     /* line-height: 22px; */
     border-bottom: none;
   }
@@ -551,4 +557,25 @@ nav a.button-collapse, nav a.button-collapse i {
   max-width: 300px;
 }
 
+.dropdown-content li{
+  cursor: pointer;
+}
+.iosfontfix{
+  font-family: "Open Sans", Georgia, sans-serif !important;
+}
 
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .menuul{
+    display: none !important;
+  }
+  .dropdown-button{
+    display: block;
+  }
+  .maxs{
+    display: none;
+  }
+  .button-collapse{
+    display: block  !important;;
+  }
+}

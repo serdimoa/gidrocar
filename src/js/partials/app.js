@@ -27,6 +27,15 @@
                 showPage(parseInt($(this).attr("data-page")));
                 calcs.init(parseInt($(this).attr("data-id")));
             });
+            var ua = navigator.userAgent,
+                event = (ua.match(/iPad/i)) ? "touchstart" : "click";
+            $(tabs).children("ul").children("li").bind(event, function() {
+                $('#content').show(1000);
+                $('.price').css("opacity", 1);
+                $('.price-sm-show').css("opacity", 1);
+                showPage(parseInt($(this).attr("data-page")));
+                calcs.init(parseInt($(this).attr("data-id")));
+            });
         };
         return this.each(createTabs);
     };
@@ -38,6 +47,7 @@ var calculate = function () {
     tabs.lightTabs();
     price.pushpin({top: tabs.offset().top, offset: 180});
     tabs.pushpin({top: tabs.offset().top,offset:97});
+
 };
 $(document).ready(function () {
 
@@ -48,6 +58,14 @@ $(document).ready(function () {
         $("nav ul").css({"width":"auto"});
         $(".nav-wrapper img ").css({"width":"300"});
 
+    }
+    if(bowser.ios){
+        $("#phone").addClass("iosfontfix");
+        $("#h4ios").addClass("iosfontfix");
+        $("#index-banner h1, #time h2, .header, #calc h4, #calc h4 span, #clean h4, #clean p span, #time p span").addClass("iosfontfix");
+        $('#content').show(1000);
+        $('.price-sm-show').css("opacity", 1);
+        //$("#phone")
     }
     $("html").css({"padding-top":"0 !important"});
     $(".button-collapse").sideNav( {menuWidth: 200, // Default is 240

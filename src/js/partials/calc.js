@@ -20,40 +20,40 @@ var Category_value = function (base, salon, him, engine, coleso, discount) {
 Category_value.prototype.init = function () {
     this.base.forEach(function (value, i) {
         i += 1;
-        $("#base-" + i).attr("data-cost", value);
-        $("label[for=base-" + i).attr("data-cost", value);
+        $("#base-" + i).attr("data-name", value);
+        $("label[for=base-" + i).attr("data-name", value);
     });
 
     this.salon.forEach(function (value, i) {
         i += 1;
-        $("#salon-" + i).attr("data-cost", value);
-        $("label[for=salon-" + i).attr("data-cost", value);
+        $("#salon-" + i).attr("data-name", value);
+        $("label[for=salon-" + i).attr("data-name", value);
     });
 
     this.him.forEach(function (value, i) {
         i += 1;
-        $("#chim-salon-" + i).attr("data-cost", value);
-        $("label[for=chim-salon-" + i).attr("data-cost", value);
+        $("#chim-salon-" + i).attr("data-name", value);
+        $("label[for=chim-salon-" + i).attr("data-name", value);
     });
 
     this.engine.forEach(function (value, i) {
         i += 1;
-        $("#engine-" + i).attr("data-cost", value);
-        $("label[for=engine-" + i).attr("data-cost", value);
+        $("#engine-" + i).attr("data-name", value);
+        $("label[for=engine-" + i).attr("data-name", value);
     });
 
     this.coleso.forEach(function (value, i) {
         i += 1;
-        $("#coleso-" + i).attr("data-cost", value);
-        $("label[for=coleso-" + i).attr("data-cost", value);
+        $("#coleso-" + i).attr("data-name", value);
+        $("label[for=coleso-" + i).attr("data-name", value);
     });
 
     this.discount.forEach(function (value, i) {
         i += 1;
-        $("#complex-" + i).attr("data-cost", value)
+        $("#complex-" + i).attr("data-name", value)
     });
     if ($(":radio:checked")) {
-        price_change($(":radio:checked").attr("data-cost"));
+        price_change($(":radio:checked").attr("data-name"));
 
     }
     else {
@@ -83,7 +83,7 @@ var Calcinit = function (param) {
             var selected = [];
             //если не нажат то добавляем стоимость
             if ($(":radio:checked")) {
-                price_change($(":radio:checked").attr("data-cost"));
+                price_change($(":radio:checked").attr("data-name"));
 
             }
             else {
@@ -102,7 +102,7 @@ var Calcinit = function (param) {
             Radio_check();
             $(this).prop("checked", false);
             if ($(":radio:checked")) {
-                price_change($(":radio:checked").attr("data-cost"));
+                price_change($(":radio:checked").attr("data-name"));
 
             }
             else {
@@ -118,7 +118,7 @@ var Calcinit = function (param) {
                 complex(complex_1_value);
                 $("#salon-6").prop("checked", false);
                 $("#coleso-1").prop("checked", false);
-                price_change($(this).attr("data-cost"));
+                price_change($(this).attr("data-name"));
                 console.log("complex-1");
                 break;
 
@@ -126,14 +126,14 @@ var Calcinit = function (param) {
 
                 complex(complex_2_value);
                 console.log("complex-2");
-                price_change($(this).attr("data-cost"));
+                price_change($(this).attr("data-name"));
                 $("#coleso-1").prop("checked", false);
                 break;
 
             case "complex-3":
                 complex(complex_3_value);
                 console.log("complex-3");
-                price_change($(this).attr("data-cost"));
+                price_change($(this).attr("data-name"));
                 break;
 
 
@@ -162,40 +162,40 @@ var Calcinit = function (param) {
     //Обработка чекбоксов Салон
     //calc_salon.on('change', function () {
     //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-cost"));
+    //        price_change_add($(this).attr("data-name"));
     //    }
     //    else {
-    //        price_change_del($(this).attr("data-cost"));
+    //        price_change_del($(this).attr("data-name"));
     //    }
     //});
     //
     ////Обработка чекбоксов Химчастка салона
     //calc_chimSalon.on('change', function () {
     //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-cost"));
+    //        price_change_add($(this).attr("data-name"));
     //    }
     //    else {
-    //        price_change_del($(this).attr("data-cost"));
+    //        price_change_del($(this).attr("data-name"));
     //    }
     //});
     //
     ////Обработка чекбоксов Двигатель
     //calc_engine.on('change', function () {
     //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-cost"));
+    //        price_change_add($(this).attr("data-name"));
     //    }
     //    else {
-    //        price_change_del($(this).attr("data-cost"));
+    //        price_change_del($(this).attr("data-name"));
     //    }
     //});
     //
     ////Обработка чекбоксов Колеса
     //calc_coleso.on('change', function () {
     //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-cost"));
+    //        price_change_add($(this).attr("data-name"));
     //    }
     //    else {
-    //        price_change_del($(this).attr("data-cost"));
+    //        price_change_del($(this).attr("data-name"));
     //    }
     //});
 
@@ -205,7 +205,7 @@ var Calcinit = function (param) {
         var discount = vals;
         $(":checkbox").each(function (e) {
             if ($(this).prop("checked")) {
-                calc_price += parseInt($(this).attr("data-cost"));
+                calc_price += parseInt($(this).attr("data-name"));
 
             }
         });
@@ -270,7 +270,7 @@ function Radio_check() {
         $("#salon-3").prop("checked") && !$("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
     ) {
         $("#complex-1").prop("checked", true);
-        price_change($("#complex-1").attr("data-cost"));
+        price_change($("#complex-1").attr("data-name"));
     }
     else if ($("#base-3").prop("checked") &&
         $("#salon-4").prop("checked") &&
@@ -280,7 +280,7 @@ function Radio_check() {
         $("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
     ) {
         $("#complex-2").prop("checked", true);
-        price_change($("#complex-2").attr("data-cost"));
+        price_change($("#complex-2").attr("data-name"));
     }
     else if ($("#base-3").prop("checked") &&
         $("#salon-4").prop("checked") &&
@@ -292,13 +292,13 @@ function Radio_check() {
     ) {
 
         $("#complex-3").prop("checked", true);
-        price_change($("#complex-3").attr("data-cost"));
+        price_change($("#complex-3").attr("data-name"));
 
     }
     else {
         $(":radio").prop("checked", false);
         if ($(":radio:checked")) {
-            price_change($(":radio:checked").attr("data-cost"));
+            price_change($(":radio:checked").attr("data-name"));
 
         }
         else {
