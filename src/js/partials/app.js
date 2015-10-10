@@ -29,12 +29,9 @@
             });
             var ua = navigator.userAgent,
                 event = (ua.match(/iPad/i)) ? "touchstart" : "click";
-            $(tabs).children("ul").children("li").bind(event, function() {
-                $('#content').show(1000);
-                $('.price').css("opacity", 1);
-                $('.price-sm-show').css("opacity", 1);
-                showPage(parseInt($(this).attr("data-page")));
-                calcs.init(parseInt($(this).attr("data-id")));
+            $(".browser-default").change(function () {
+                calcs.init(parseInt($(":selected").val()));
+                Materialize.toast('I am a toast!', 4000) // 4000 is the duration of the toast
             });
         };
         return this.each(createTabs);

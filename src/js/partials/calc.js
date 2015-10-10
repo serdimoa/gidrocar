@@ -1,6 +1,7 @@
 /**
  * Created by HOME on 29.09.2015.
  */
+
 var calc_price = 0;
 
 // Оюъект цен
@@ -19,33 +20,34 @@ var Category_value = function (base, salon, him, engine, coleso, discount) {
 // Функция инициализации
 Category_value.prototype.init = function () {
     this.base.forEach(function (value, i) {
+        "use strict";
         i += 1;
-        $("#base-" + i).attr("data-name", value);
-        $("label[for=base-" + i).attr("data-name", value);
+        $("#base-" + i+"").attr("data-name", value);
+        $(".label_calc-base-" + i).attr("data-name", value);
     });
 
     this.salon.forEach(function (value, i) {
         i += 1;
         $("#salon-" + i).attr("data-name", value);
-        $("label[for=salon-" + i).attr("data-name", value);
+        $(".label_calc-salon-" + i).attr("data-name", value);
     });
 
     this.him.forEach(function (value, i) {
         i += 1;
         $("#chim-salon-" + i).attr("data-name", value);
-        $("label[for=chim-salon-" + i).attr("data-name", value);
+        $(".label_calc-chim-salon-" + i).attr("data-name", value);
     });
 
     this.engine.forEach(function (value, i) {
         i += 1;
         $("#engine-" + i).attr("data-name", value);
-        $("label[for=engine-" + i).attr("data-name", value);
+        $(".label_calc-engine-" + i).attr("data-name", value);
     });
 
     this.coleso.forEach(function (value, i) {
         i += 1;
         $("#coleso-" + i).attr("data-name", value);
-        $("label[for=coleso-" + i).attr("data-name", value);
+        $(".label_calc-coleso-" + i).attr("data-name", value);
     });
 
     this.discount.forEach(function (value, i) {

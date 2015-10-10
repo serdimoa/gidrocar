@@ -368,7 +368,7 @@ ul {
 
 }
 
-[type=checkbox] + label {
+tr {
   border-bottom: 0.07em dotted #5A5A5A;
 
 }
@@ -377,9 +377,9 @@ label {
   width: 100%;
 }
 
-label::after {
+td>span::after {
   font: normal normal normal 14px/1 FontAwesome;
-  content: attr(data-name) ' \f158';
+  content: ' \f158';
   float: right;
 }
 
@@ -394,7 +394,9 @@ label::after {
     font-size: 58px;
   }
 }
-
+.dropdown1>li{
+  cursor:pointer;
+}
 .dropdown-button {
   width: 100%;
   display: none;
