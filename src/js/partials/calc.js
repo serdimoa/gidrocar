@@ -3,7 +3,8 @@
  */
 
 var calc_price = 0;
-
+var calc_priceBefore = $(".price-before span ");
+var calc_priceAfter = $(".price-after span ");
 // Оюъект цен
 var Category_value = function (base, salon, him, engine, coleso, discount) {
 
@@ -20,42 +21,44 @@ var Category_value = function (base, salon, him, engine, coleso, discount) {
 // Функция инициализации
 Category_value.prototype.init = function () {
     this.base.forEach(function (value, i) {
-        "use strict";
         i += 1;
-        $("#base-" + i+"").attr("data-name", value);
-        $(".label_calc-base-" + i).attr("data-name", value);
+        $("#base-" + i+" input").val(value);
+        $("#base-" + i+" span").html(value + '<i class="fa fa-rub"></i>');
     });
 
     this.salon.forEach(function (value, i) {
         i += 1;
-        $("#salon-" + i).attr("data-name", value);
-        $(".label_calc-salon-" + i).attr("data-name", value);
+        $("#salon-" + i+" input").val(value);
+        $("#salon-" + i+" span").html(value + '<i class="fa fa-rub"></i>');
     });
 
     this.him.forEach(function (value, i) {
         i += 1;
-        $("#chim-salon-" + i).attr("data-name", value);
-        $(".label_calc-chim-salon-" + i).attr("data-name", value);
+        $("#chim-salon-" + i+" input").val(value);
+        $("#chim-salon-" + i+" span").html(value + '<i class="fa fa-rub"></i>');
+
     });
 
     this.engine.forEach(function (value, i) {
         i += 1;
-        $("#engine-" + i).attr("data-name", value);
-        $(".label_calc-engine-" + i).attr("data-name", value);
+        $("#engine-" + i+" input").val(value);
+        $("#engine-" + i+" span").html(value + '<i class="fa fa-rub"></i>');
+
     });
 
     this.coleso.forEach(function (value, i) {
         i += 1;
-        $("#coleso-" + i).attr("data-name", value);
-        $(".label_calc-coleso-" + i).attr("data-name", value);
+        $("#coleso-" + i+" input").val(value);
+        $("#coleso-" + i+" span").html(value + '<i class="fa fa-rub"></i>');
+
     });
 
     this.discount.forEach(function (value, i) {
         i += 1;
-        $("#complex-" + i).attr("data-name", value)
+        $("#complex-" + i).val(value);
     });
     if ($(":radio:checked")) {
-        price_change($(":radio:checked").attr("data-name"));
+        price_change($(":radio:checked").val());
 
     }
     else {
@@ -66,15 +69,8 @@ Category_value.prototype.init = function () {
 
 var Calcinit = function (param) {
 
-    var calc_tabs = $(".tabs ul li");
-    var calc_complex = $(".complex li ");
-    var calc_base = $(".base li :checkbox");
-    var calc_salon = $(".salon li :checkbox");
-    var calc_chimSalon = $(".chim-salon li :checkbox");
-    var calc_engine = $(".engine li :checkbox");
-    var calc_coleso = $(".coleso li :checkbox");
-    var calc_priceBefore = $(".price-before span ");
-    var calc_priceAfter = $(".price-after span ");
+
+
     this.param = param;
 
 
@@ -85,7 +81,7 @@ var Calcinit = function (param) {
             var selected = [];
             //если не нажат то добавляем стоимость
             if ($(":radio:checked")) {
-                price_change($(":radio:checked").attr("data-name"));
+                price_change($(":radio:checked").val());
 
             }
             else {
@@ -104,7 +100,7 @@ var Calcinit = function (param) {
             Radio_check();
             $(this).prop("checked", false);
             if ($(":radio:checked")) {
-                price_change($(":radio:checked").attr("data-name"));
+                price_change($(":radio:checked").val());
 
             }
             else {
@@ -118,24 +114,20 @@ var Calcinit = function (param) {
         switch ($(this).attr("id")) {
             case "complex-1":
                 complex(complex_1_value);
-                $("#salon-6").prop("checked", false);
-                $("#coleso-1").prop("checked", false);
-                price_change($(this).attr("data-name"));
-                console.log("complex-1");
+                $("#salon-6 input").prop("checked", false);
+                $("#coleso-1 input").prop("checked", false);
+                price_change($(this).val());
                 break;
 
             case "complex-2":
-
                 complex(complex_2_value);
-                console.log("complex-2");
-                price_change($(this).attr("data-name"));
+                price_change($(this).val());
                 $("#coleso-1").prop("checked", false);
                 break;
 
             case "complex-3":
                 complex(complex_3_value);
-                console.log("complex-3");
-                price_change($(this).attr("data-name"));
+                price_change($(this).val());
                 break;
 
 
@@ -145,14 +137,14 @@ var Calcinit = function (param) {
     function complex(e) {
 
         e.base.forEach(function (val) {
-            $("#base-" + val).prop("checked", true);
+            $("#base-" + val+" input").prop("checked", true);
         });
         e.salon.forEach(function (val) {
-            $("#salon-" + val).prop("checked", true);
+            $("#salon-" + val +" input").prop("checked", true);
         });
         if (e.koleso) {
             e.koleso.forEach(function (val) {
-                $("#coleso-" + val).prop("checked", true);
+                $("#coleso-" + val+" input").prop("checked", true);
             });
 
         }
@@ -202,30 +194,8 @@ var Calcinit = function (param) {
     //});
 
     // (+) к стоимости
-    price_change = function (vals) {
-        calc_price = 0;
-        var discount = vals;
-        $(":checkbox").each(function (e) {
-            if ($(this).prop("checked")) {
-                calc_price += parseInt($(this).attr("data-name"));
-
-            }
-        });
-        console.log(discount);
-        if (discount) {
-            $(".price-before").show();
-            calc_priceAfter.text(calc_price - discount);
-            calc_priceBefore.text(calc_price);
-        } else {
-            $(".price-before").hide();
-            calc_priceAfter.text(calc_price);
-
-        }
-
-    };
 
 
-    //console.log(param.tabs);
 
 
 };
@@ -265,42 +235,42 @@ var complex_1_value = {base: [3], salon: [7, 2,4, 1, 3]};
 var complex_2_value = {base: [3], salon: [7, 2,4, 1, 3, 6]};
 var complex_3_value = {base: [3], salon: [7, 2,4, 1, 3, 6], koleso: [1]};
 function Radio_check() {
-    if ($("#base-3").prop("checked") &&
-        $("#salon-4").prop("checked") &&
-        $("#salon-7").prop("checked") &&
-        $("#salon-1").prop("checked") &&
-        $("#salon-3").prop("checked") && !$("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
+    if ($("#base-3 input").prop("checked") &&
+        $("#salon-4 input").prop("checked") &&
+        $("#salon-7 input").prop("checked") &&
+        $("#salon-1 input").prop("checked") &&
+        $("#salon-3 input").prop("checked") && !$("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
     ) {
-        $("#complex-1").prop("checked", true);
-        price_change($("#complex-1").attr("data-name"));
+        $("#complex-1 ").prop("checked", true);
+        price_change($("#complex-1").val());
     }
-    else if ($("#base-3").prop("checked") &&
-        $("#salon-4").prop("checked") &&
-        $("#salon-7").prop("checked") &&
-        $("#salon-1").prop("checked") &&
-        $("#salon-3").prop("checked") &&
-        $("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
+    else if ($("#base-3 ").prop("checked") &&
+        $("#salon-4 input").prop("checked") &&
+        $("#salon-7 input").prop("checked") &&
+        $("#salon-1 input").prop("checked") &&
+        $("#salon-3 input").prop("checked") &&
+        $("#salon-6 input").prop("checked") && !$("#coleso-1 input").prop("checked")
     ) {
-        $("#complex-2").prop("checked", true);
-        price_change($("#complex-2").attr("data-name"));
+        $("#complex-2 ").prop("checked", true);
+        price_change($("#complex-2").val());
     }
-    else if ($("#base-3").prop("checked") &&
-        $("#salon-4").prop("checked") &&
-        $("#salon-7").prop("checked") &&
-        $("#salon-1").prop("checked") &&
-        $("#salon-3").prop("checked") &&
-        $("#salon-6").prop("checked") &&
-        $("#coleso-1").prop("checked")
+    else if ($("#base-3 input").prop("checked") &&
+        $("#salon-4 input").prop("checked") &&
+        $("#salon-7 input").prop("checked") &&
+        $("#salon-1 input").prop("checked") &&
+        $("#salon-3 input").prop("checked") &&
+        $("#salon-6 input").prop("checked") &&
+        $("#coleso-1 input").prop("checked")
     ) {
 
-        $("#complex-3").prop("checked", true);
-        price_change($("#complex-3").attr("data-name"));
+        $("#complex-3 ").prop("checked", true);
+        price_change($("#complex-3 ").val());
 
     }
     else {
         $(":radio").prop("checked", false);
         if ($(":radio:checked")) {
-            price_change($(":radio:checked").attr("data-name"));
+            price_change($(":radio:checked").val());
 
         }
         else {
@@ -311,7 +281,29 @@ function Radio_check() {
 
 }
 
+function price_change (vals) {
+    calc_price = 0;
+    var discount = vals;
+    $(":checkbox").each(function (e) {
+        if ($(this).prop("checked")) {
+            calc_price += parseInt($(this).val());
 
+        }
+    });
+    if (discount) {
+        $(".price-before").show();
+        console.log(calc_price);
+        calc_priceAfter.text(calc_price - discount);
+        calc_priceBefore.text(calc_price);
+    } else {
+        console.log(calc_price);
+
+        $(".price-before").hide();
+        calc_priceAfter.text(calc_price);
+
+    }
+
+}
 
 
 

@@ -13,25 +13,27 @@
                         <div class="row">
 
                             <div class="tabs">
-                                <ul class="maxs">
-                                    <li data-id="1" class="tooltipped" data-position="bottom" data-delay="50"
-                                        data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo"><img src="img/metiz.png"
-                                                                                                 alt="lada"/>
+                                <ul class="tabs">
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
+                                        data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo"><a href="#" data-id="1"><img src="img/metiz.png"
+                                                                                                 alt="lada"/></a>
                                     </li>
-                                    <li data-id="2" class="tooltipped" data-position="bottom" data-delay="50"
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
                                         data-tooltip=" Prius, Corolla, Camry, Jetta, BMW 3-5">
-                                        <img src="img/camry.png" alt="camry"/>
+                                        <a href="#"  data-id="2"><img src="img/camry.png" alt="camry"/></a>
                                     </li>
-                                    <li data-id="3" class="tooltipped" data-position="bottom" data-delay="50"
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
                                         data-tooltip=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">
-                                        <img src="img/subaru.png" alt="subaru"/>
-                                    </li><li data-id="5"><img src="img/hummer-h3.png" alt="hummer"/></li>
-                                    <li data-id="4" class="tooltipped" data-position="bottom" data-delay="50"
+                                        <a href="#" data-id="3"> <img src="img/subaru.png" alt="subaru"/></a>
+                                    </li>
+                                    <li class="tab col s2" ><a data-id="5" href="#"><img src="img/hummer-h3.png" alt="hummer"/></a></li>
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
                                         data-tooltip="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">
-                                        <img src="img/gaz.png" alt="Gaz"/>
+                                        <a href="#" data-id="4"><img src="img/gaz.png" alt="Gaz"/></a>
                                     </li>
 
                                 </ul>
+
                                 <!-- Dropdown Trigger -->
 
                                 <br/>
@@ -42,14 +44,15 @@
 
                             </div>
 
-                            <select class="browser-default">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                                <option value="4">Option 4</option>
-                                <option value="5">Option 5</option>
-                            </select>
+                            <!--<select class="browser-default">-->
+                                <!--<option value="" disabled selected>Выберите класс автомобиля-->
+                                <!--</option>-->
+                                <!--<option value="1">Option 1</option>-->
+                                <!--<option value="2">Option 2</option>-->
+                                <!--<option value="3">Option 3</option>-->
+                                <!--<option value="4">Option 4</option>-->
+                                <!--<option value="5">Option 5</option>-->
+                            <!--</select>-->
                             <div class="col l9 m9 s12 " style="min-height: 100px;">
 
                                 <div id="content" class="content">
@@ -89,69 +92,69 @@
                                          data-tooltip="За повреждение некачественного лакокрасочного слоя автомобиля, сотрудники автомойки
 ответственности не несут.">Кузов<i class="fa fa-question-circle"></i></div>
                                     <ul class="base">
-                                        <li><input type="checkbox" id="base-1"
-                                                   class="filled-in-box"/><label for="base-1"
-                                                class="label_calc-base-1">Экспресс
+                                        <li id="base-1"><input type="checkbox" id="base-11"
+                                                   class="filled-in-box"/><label for="base-11"
+                                                class="label_calc-base-1">Экспресс <span class="right"></span>
                                         </label></li>
 
 
-                                        <li><input type="checkbox" id="base-2"
+                                        <li id="base-2"><input type="checkbox" id="base-22"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-base-2" for="base-2">Экспресс
-                                            с химией</label>
+                                                class="label_calc-base-2" for="base-22">Экспресс
+                                            с химией<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" id="base-3"
+                                        <li id="base-3"><input type="checkbox" id="base-33"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-base-3" for="base-3">Бесконтактная
-                                            мойка (химия, коврики, сушка)</label>
+                                                class="label_calc-base-3" for="base-33">Бесконтактная
+                                            мойка (химия, коврики, сушка)<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" id="base-4"
+                                        <li id="base-4"><input type="checkbox" id="base-44"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-base-4" for="base-4">
-                                            Чистка кузова от насекомых, битума и т. п. (цена за 1 элемент)</label>
+                                                class="label_calc-base-4" for="base-44">
+                                            Чистка кузова от насекомых, битума и т. п. (цена за 1 элемент)<span class="right"></span></label>
                                         </li>
                                     </ul>
                                     <div class="card-title">Салон</div>
                                     <ul class="salon">
-                                        <li><input type="checkbox" data-name="200" id="salon-1"
+                                        <li id="salon-1"><input type="checkbox"  id="salon-11"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-salon-1" for="salon-1">Уборка
-                                            салона пылесосом</label>
+                                                class="label_calc-salon-1" for="salon-11">Уборка
+                                            салона пылесосом<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-2"
+                                        <li  id="salon-2"><input type="checkbox" id="salon-22"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-salon-2" for="salon-2">Влажная
-                                            уборка панели</label>
+                                                class="label_calc-salon-2" for="salon-22">Влажная
+                                            уборка панели<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-3"
+                                        <li  id="salon-3"><input type="checkbox"  id="salon-33"
                                                    class="filled-in-box"/><label
-                                                class="label_calc-salon-3" for="salon-3">Влажная
-                                            уборка салона </label>
+                                                class="label_calc-salon-3" for="salon-33">Влажная
+                                            уборка салона <span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-4"
-                                                   class="filled-in-box"/><label for="salon-4"
+                                        <li  id="salon-4"><input type="checkbox"  id="salon-44"
+                                                   class="filled-in-box"/><label for="salon-44"
                                                 class="label_calc-salon-4">Все
-                                            стёкла</label>
+                                            стёкла<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-5"
-                                                   class="filled-in-box"/><label for="salon-5"
+                                        <li  id="salon-5"><input type="checkbox" id="salon-55"
+                                                   class="filled-in-box"/><label for="salon-55"
                                                 class="label_calc-salon-5">Уборка
-                                            багажника пылесосом</label>
+                                            багажника пылесосом<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-6"
-                                                   class="filled-in-box"/><label for="salon-6"
+                                        <li id="salon-6"><input type="checkbox"  id="salon-66"
+                                                   class="filled-in-box"/><label for="salon-66"
                                                 class="label_calc-salon-6">Полироль
-                                            пластика</label>
+                                            пластика<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-7"
-                                                   class="filled-in-box"/><label for="salon-7"
+                                        <li  id="salon-7"><input type="checkbox"  id="salon-77"
+                                                   class="filled-in-box"/><label for="salon-77"
                                                 class="label_calc-salon-7">Мойка
-                                            резиновых ковриков</label>
+                                            резиновых ковриков<span class="right"></span></label>
                                         </li>
-                                        <li><input type="checkbox" data-name="200" id="salon-8"
-                                                   class="filled-in-box"/><label for="salon-8"
+                                        <li id="salon-8"><input type="checkbox" id="salon-88"
+                                                   class="filled-in-box"/><label for="salon-88"
                                                 class="label_calc-salon-8">Стирка
-                                            ворсовых ковриков (цена за 1 шт. С сушкой)</label>
+                                            ворсовых ковриков (цена за 1 шт. С сушкой)<span class="right"></span></label>
                                         </li>
                                     </ul>
 
@@ -161,37 +164,37 @@
                                         Химчистка салона<i class="fa fa-question-circle"></i>:
                                     </div>
                                     <ul class="chim-salon">
-                                        <li><input type="checkbox" id="chim-salon-1" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-1">Потолок</label></li>
-                                        <li><input type="checkbox" id="chim-salon-2" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-2">Пол</label></li>
-                                        <li><input type="checkbox" id="chim-salon-3" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-3">Сиденья (1 шт.)</label></li>
-                                        <li><input type="checkbox" id="chim-salon-4" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-4">Двери (1 шт.)</label></li>
-                                        <li><input type="checkbox" id="chim-salon-5" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-5">Панель</label></li>
-                                        <li><input type="checkbox" id="chim-salon-6" class="filled-in-box"/><label
-                                                class="label_calc-chim-salon-6">Багажник</label></li>
+                                        <li id="chim-salon-1"><input type="checkbox" id="chim-salon-11" class="filled-in-box"/><label
+                                                for="chim-salon-11">Потолок<span class="right"></span></label></li>
+                                        <li id="chim-salon-2"><input type="checkbox" id="chim-salon-22" class="filled-in-box"/><label
+                                                for="chim-salon-22">Пол<span class="right"></span></label></li>
+                                        <li id="chim-salon-3"><input type="checkbox" id="chim-salon-33" class="filled-in-box"/><label
+                                                for="chim-salon-33">Сиденья (1 шт.)<span class="right"></span></label></li>
+                                        <li id="chim-salon-4"><input type="checkbox" id="chim-salon-44" class="filled-in-box"/><label
+                                                for="chim-salon-44">Двери (1 шт.)<span class="right"></span></label></li>
+                                        <li id="chim-salon-5"><input type="checkbox" id="chim-salon-55" class="filled-in-box"/><label
+                                                for="chim-salon-55">Панель<span class="right"></span></label></li>
+                                        <li id="chim-salon-6"><input type="checkbox" id="chim-salon-66" class="filled-in-box"/><label
+                                                for="chim-salon-66">Багажник<span class="right"></span></label></li>
                                     </ul>
                                     <div class="card-title tooltipped" data-position="top" data-delay="50"
                                          data-tooltip="За возможные проблемы с запуском двигателя внутреннего сгорания, сотрудники автомойки ответственности не несут.">Двигатель<i class="fa fa-question-circle"></i>:
                                     </div>
                                     <ul class="engine">
-                                        <li><input type="checkbox" id="engine-1" class="filled-in-box"/><label
-                                                class="label_calc-engine-1">Мойка радиатора</label></li>
-                                        <li><input type="checkbox" id="engine-2" class="filled-in-box"/><label
-                                                class="label_calc-engine-2">Мойка двигателя и всего подкапотного пространства</label>
+                                        <li id="engine-1"><input type="checkbox" id="engine-11" class="filled-in-box"/><label
+                                                for="engine-11">Мойка радиатора<span class="right"></span></label></li>
+                                        <li id="engine-2"><input type="checkbox" id="engine-22" class="filled-in-box"/><label
+                                                for="engine-22">Мойка двигателя и всего подкапотного пространства<span class="right"></span></label>
                                         </li>
                                     </ul>
                                     <div class="card-title">Колеса:</div>
                                     <ul class="coleso">
-                                        <li><input type="checkbox" id="coleso-1" class="filled-in-box"/><label
-                                                class="label_calc-coleso-1">Чернение резины
-                                        </label></li>
-                                        <li><input type="checkbox" id="coleso-2" class="filled-in-box"/><label
-                                                class="label_calc-coleso-2">Ополаскивание колес (за 1 колесо)
-                                        </label></li>
+                                        <li id="coleso-1"><input type="checkbox" id="coleso-11" class="filled-in-box"/><label
+                                                for="coleso-11">Чернение резины
+                                        <span class="right"></span></label></li>
+                                        <li id="coleso-2"><input type="checkbox" id="coleso-22" class="filled-in-box"/><label
+                                                for="coleso-22">Ополаскивание колес (за 1 колесо)
+                                        <span class="right"></span></label></li>
                                     </ul>
                                 </div>
 
@@ -227,47 +230,6 @@
                                     </div>
 
                             </div>
-
-
-                            <table>
-                                <tbody>
-
-                                <tr>
-                                    <td><input type="checkbox" class="filled-in-box" id="base-11"/><label for="base-11"> base33</label></td>
-
-                                    <td><span>price</span></td>
-                                </tr>
-
-                                <tr>
-
-                                    <td><input type="checkbox" class="filled-in-box" id="base-22"/><label for="base-22"> base33</label></td>
-
-                                    <td><span>price</span></td>
-                                </tr>
-
-                                <tr>
-                                    <td><input type="checkbox" class="filled-in-box" id="base-33"/><label for="base-33"> base33</label></td>
-
-                                    <td><span>price</span></td>
-                                </tr>
-
-                                <tr>
-                                    <td><input type="checkbox" class="filled-in-box" id="base-44"/><label for="base-44"> base33</label></td>
-
-                                    <td><span>price</span></td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-
-
-
-
-
-
-
-
-
 
 
 

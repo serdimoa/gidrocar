@@ -256,9 +256,7 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
     padding: 20px;
 
   }
-  #content {
-    display: none;
-  }
+
 }
 
 .content .card-title {
@@ -295,60 +293,19 @@ ul {
   color: #fff;
 }
 
-.tabs {
-  display: inline-block;
-  width: auto;
-  z-index: 1;
 
-}
 
-.tabs > div {
-  padding-top: 10px;
-  background-color: #fff;
 
-}
 
 .borders {
   border-bottom: 3px solid #51bfed;
 
 }
 
-.tabs ul {
-  margin: 0;
-  padding: 0;
+
+.tabs .tab{
+  z-index: 5;
 }
-
-.tabs ul:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 5px;
-  background: #51C0EE;
-}
-
-.tabs ul li {
-  margin: 0;
-  cursor: pointer;
-  display: block;
-  font-size: .9em;
-  float: left;
-  padding: 10px 29px;
-  background: #e9eaeb;
-  color: #707070;
-
-  text-transform: uppercase;
-
-}
-
-.tabs ul li.active, .tabs ul li.active:hover {
-  background: #51C0EE;
-  color: #fff;
-}
-
-.tabs ul li:hover {
-  background: #d6d6d7;
-}
-
 [type=checkbox] + label, [type=radio]:checked + label, [type=radio]:not(:checked) + label {
   font-weight: 300;
   line-height: 1em;
@@ -401,6 +358,15 @@ td>span::after {
   width: 100%;
   display: none;
 }
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: #51bfed;
+  will-change: left, right;
+  z-index: 1;
+  width: 16.66667%;
+}
 
 .price {
   font-size: 3em;
@@ -409,7 +375,7 @@ td>span::after {
   padding: 15px;
   opacity: 0;
   z-index: 2;
-  margin-top: -104px;
+
   margin-right: 3px;
   background: #fff;
   .price-before {
