@@ -40,7 +40,6 @@ nav {
     position: relative;
   }
   .button-collapse {
-    margin-left: 40px;
     margin-top: 27px;
     i {
       color: $f;
@@ -65,7 +64,9 @@ nav {
 
   }
 }
-
+.browser-default{
+  display: none !important;
+}
 .contact_menu {
   margin-top: 2em;
   font-size: 1.3em;
@@ -369,7 +370,7 @@ td>span::after {
 }
 
 .price {
-  font-size: 3em;
+  font-size: 2.5em;
   border: #51bfed 3px solid;
   cursor: pointer;
   padding: 15px;
@@ -386,6 +387,7 @@ td>span::after {
   }
   .price-after {
     color: #34A853;
+    font-size: .9em;
   }
   .tooltipped {
     margin-top: 0;
@@ -416,9 +418,46 @@ nav a.button-collapse, nav a.button-collapse i {
   height: 4pc;
   line-height: 3pc;
 }
+/* iPhone 5 Retina regardless of IOS version */
+@media (device-height : 568px)
+and (device-width : 320px)
+and (-webkit-min-device-pixel-ratio: 2){
+  .price-sm-show {
+    display: none;
+    opacity: 0;
+  }
+.nav-wrapper a img{
+  width: 300px;
+}
+  .browser-default{
+    display: block !important;
+  }
+  nav a.button-collapse i{
+    padding-left:5px;
+  }
+}
+@media only screen and (max-width: 1151px){
+  .nav-wrapper a img{
+    width: 300px;
+  }
+  nav a.button-collapse i{
+    padding-left: 0px;
+  }
+}
 
 @media only screen and (max-width: 640px) {
 
+
+
+  .row .col {
+    padding: 0;
+  }
+  .browser-default{
+    display: block !important;
+  }
+  .tabs{
+    display: none;
+  }
   #ms-booking-button-container {
     bottom: 0 !important;
     top: auto !important;
@@ -438,8 +477,8 @@ nav a.button-collapse, nav a.button-collapse i {
   #phone {
     font-size: .9em;
   }
-  h1 {
-    font-size: 2.2em;
+  #clean h4,#calc h4 ,h2,h1,h4 {
+    font-size: 1.9em;
   }
   .dropdown-button {
     display: block;
@@ -461,7 +500,7 @@ nav a.button-collapse, nav a.button-collapse i {
     border: #51bfed 3px solid;
     cursor: pointer;
     display: block;
-    opacity: 0;
+    opacity: 1;
     padding: 15px;
     z-index: 2;
     margin-top: -12px;
@@ -501,6 +540,10 @@ nav a.button-collapse, nav a.button-collapse i {
     font-size: 6.2em;
 
   }
+  .price-sm-show {
+    display: none;
+    opacity: 0;
+  }
   .tabs ul li {
     padding: 10px 63px;
   }
@@ -531,8 +574,19 @@ nav a.button-collapse, nav a.button-collapse i {
 .iosfontfix{
   font-family: "Open Sans", Georgia, sans-serif !important;
 }
-
+@media only screen and (min-width: 601px){
+  .nav-wrapper a img{
+    height: 70px;
+  }
+  .button-collapse{
+    margin-left: 100px;
+  }
+}
 @media only screen and (device-width: 768px) {
+  .section {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   /* For general iPad layouts */
   .menuul{
     display: none !important;
@@ -544,6 +598,10 @@ nav a.button-collapse, nav a.button-collapse i {
     display: none;
   }
   .button-collapse{
-    display: block  !important;;
+    display: block  !important;
+    margin-left: 100px;
+  }
+  .nav-wrapper a img{
+    height: 70px;
   }
 }
