@@ -2,13 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63f0275-c8f9-4f3f-8c9a-f6e186895ea0" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-BoldItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Light.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-LightItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-Medium.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans-MediumItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\GIDROCAR\gidrocar\src\fonts\BloggerSans\BloggerSans.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/partials/app.js" afterPath="$PROJECT_DIR$/src/js/partials/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/partials/app.scss" afterPath="$PROJECT_DIR$/src/style/partials/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc.html" afterPath="$PROJECT_DIR$/src/calc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gidrocar.iml" afterPath="$PROJECT_DIR$/.idea/gidrocar.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact.html" afterPath="$PROJECT_DIR$/src/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/template/header.html" afterPath="$PROJECT_DIR$/src/template/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gidrocar.iws" />
@@ -33,55 +79,62 @@
       <file leaf-file-name="calc.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-146.46153">
-              <caret line="224" column="56" selection-start-line="224" selection-start-column="56" selection-end-line="224" selection-end-column="56" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8727274">
+              <caret line="267" column="61" selection-start-line="267" selection-start-column="51" selection-end-line="267" selection-end-column="61" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.884615">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/partials/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3636363">
-              <caret line="441" column="3" selection-start-line="441" selection-start-column="3" selection-end-line="441" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.45772058">
+              <caret line="443" column="3" selection-start-line="443" selection-start-column="3" selection-end-line="443" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/partials/app.js">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/style/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BloggerSans.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BloggerSans-Italic.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans-Italic.css">
+      <file leaf-file-name="fonts.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/style/partials/fonts.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,7 +152,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/calc.html" />
+        <option value="$PROJECT_DIR$/src/contact.html" />
         <option value="$PROJECT_DIR$/src/js/partials/app.js" />
+        <option value="$PROJECT_DIR$/src/style/partials/fonts.css" />
+        <option value="$PROJECT_DIR$/src/style/main.scss" />
+        <option value="$PROJECT_DIR$/src/template/header.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/style/partials/app.scss" />
       </list>
     </option>
@@ -192,6 +250,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -211,9 +270,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gidrocar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,6 +330,35 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -244,25 +381,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.5119617" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.48803827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.5183413" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.4816587" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.49441788" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -277,58 +414,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans.html">
+    <entry file="file://$PROJECT_DIR$/src/calc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans-Bold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans-Italic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans-MediumItalic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fonts/BloggerSans/BloggerSans.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="224" column="56" selection-start-line="224" selection-start-column="56" selection-end-line="224" selection-end-column="56" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style/partials/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3636363">
+        <state vertical-scroll-proportion="0.0">
           <caret line="441" column="3" selection-start-line="441" selection-start-column="3" selection-end-line="441" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-146.46153">
-          <caret line="224" column="56" selection-start-line="224" selection-start-column="56" selection-end-line="224" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -345,6 +444,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/Materialize/js/scrollspy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0133556">
+          <caret line="162" column="74" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.059336822">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/partials/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7378965">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/partials/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.884615">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8727274">
+          <caret line="267" column="61" selection-start-line="267" selection-start-column="51" selection-end-line="267" selection-end-column="61" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/partials/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45772058">
+          <caret line="443" column="3" selection-start-line="443" selection-start-column="3" selection-end-line="443" selection-end-column="3" />
           <folding />
         </state>
       </provider>

@@ -81,7 +81,7 @@ $(document).ready(function () {
         }
     );
 
-console.log(screen.width);
+    $('.scrollspy').scrollSpy();
 
 
 });

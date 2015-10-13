@@ -1,6 +1,6 @@
 //= template/header.html
 
-<div id="index-banner" class="parallax-container">
+<div id="index-banner" class="parallax-container scrollspy ">
     <div class="section no-pad-bot">
         <div class="container">
             <br><br>
@@ -34,16 +34,266 @@
     <hr/>
 
 </div>
-<div class="container" id="calc">
+<div id="calcu" class="scrollspy">
+<div class="container " id="calc">
     <div class="section">
         <div class="row">
             <div class="col s12"><h4 class="center-align">На автомойке <span>ГИДРОКАР</span> вы получите самые качественные услуги для вашего авто по самым приятным ценам в городе.</h4></div>
         </div>
-        <div class="row"><a class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos" href="calc.html">Калькулятор цен</a>
+        <div class="row"><a class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos" href="#calcinit">Калькулятор цен</a>
         </div>
     </div>
     <hr/>
 
+</div>
+
+<div class="container scrollspy" id="calcinit">
+    <div class="row">
+        <form action="#">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title grey-text text-darken-4 margin-bottom-1em width-100 hide-on-med-and-down">
+                            Выберите класс автомобиля
+                        </div>
+                        <div class="row">
+
+                            <div class="tabs">
+                                <ul class="tabs">
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
+                                        data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo"><a href="#" data-id="1"><img src="img/metiz.png"
+                                                                                                                         alt="lada"/></a>
+                                    </li>
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
+                                        data-tooltip=" Prius, Corolla, Camry, Jetta, BMW 3-5">
+                                        <a href="#"  data-id="2"><img src="img/camry.png" alt="camry"/></a>
+                                    </li>
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
+                                        data-tooltip=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">
+                                        <a href="#" data-id="3"> <img src="img/subaru.png" alt="subaru"/></a>
+                                    </li>
+                                    <li class="tab col s2" ><a data-id="5" href="#"><img src="img/hummer-h3.png" alt="hummer"/></a></li>
+                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
+                                        data-tooltip="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">
+                                        <a href="#" data-id="4"><img src="img/gaz.png" alt="Gaz"/></a>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Dropdown Trigger -->
+
+                                <br/>
+
+
+
+
+
+                            </div>
+
+                            <select class="browser-default">
+                                <option value="" disabled selected>Выберите класс автомобиля
+                                </option>
+                                <option value="1">Мини и малый класс</option>
+                                <option value="2">Средний класс</option>
+                                <option value="3">Кросс и бизнес класс</option>
+                                <option value="4">Внедорожники, вэны, пикапы</option>
+                                <option value="5">Hummer
+                                </option>
+                            </select>
+                            <div class="col l9 m9 s12 " style="min-height: 100px;">
+
+                                <div id="content" class="content">
+                                    <div class="row">
+                                        <div class="content">
+                                            <div class="card-title width-100">Выберите комплекс или <br/>составьте свой список
+                                                услуг
+                                            </div>
+
+                                            <ul class="complex">
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-1"
+                                                           id="complex-1"/><label
+                                                        class="label_calc" for="complex-1">Комплекс mini</label></li>
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip=" Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-2"
+                                                           id="complex-2"/><label
+                                                        class="label_calc" for="complex-2">Комплекс midle</label></li>
+                                                <li class="left pLeftLi tooltipped" data-position="bottom"
+                                                    data-delay="50"
+                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона + воск кузова + чернение резины">
+                                                    <input type="radio" name="complex"
+                                                           title="complex-3"
+                                                           id="complex-3"/><label
+                                                        class="label_calc" for="complex-3">Комплекс maxi</label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
+                                         data-tooltip="За повреждение некачественного лакокрасочного слоя автомобиля, сотрудники автомойки
+ответственности не несут.">Кузов<i class="fa fa-question-circle"></i></div>
+                                    <ul class="base">
+                                        <li id="base-1"><input type="checkbox" id="base-11"
+                                                               class="filled-in-box"/><label for="base-11"
+                                                                                             class="label_calc-base-1">Экспресс <span class="right"></span>
+                                        </label></li>
+
+
+                                        <li id="base-2"><input type="checkbox" id="base-22"
+                                                               class="filled-in-box"/><label
+                                                class="label_calc-base-2" for="base-22">Экспресс
+                                            с химией<span class="right"></span></label>
+                                        </li>
+                                        <li id="base-3"><input type="checkbox" id="base-33"
+                                                               class="filled-in-box"/><label
+                                                class="label_calc-base-3" for="base-33">Бесконтактная
+                                            мойка (химия, коврики, сушка)<span class="right"></span></label>
+                                        </li>
+                                        <li id="base-4"><input type="checkbox" id="base-44"
+                                                               class="filled-in-box"/><label
+                                                class="label_calc-base-4" for="base-44">
+                                            Чистка кузова от насекомых, битума и т. п. (цена за 1 элемент)<span class="right"></span></label>
+                                        </li>
+                                    </ul>
+                                    <div class="card-title">Салон</div>
+                                    <ul class="salon">
+                                        <li id="salon-1"><input type="checkbox"  id="salon-11"
+                                                                class="filled-in-box"/><label
+                                                class="label_calc-salon-1" for="salon-11">Уборка
+                                            салона пылесосом<span class="right"></span></label>
+                                        </li>
+                                        <li  id="salon-2"><input type="checkbox" id="salon-22"
+                                                                 class="filled-in-box"/><label
+                                                class="label_calc-salon-2" for="salon-22">Влажная
+                                            уборка панели<span class="right"></span></label>
+                                        </li>
+                                        <li  id="salon-3"><input type="checkbox"  id="salon-33"
+                                                                 class="filled-in-box"/><label
+                                                class="label_calc-salon-3" for="salon-33">Влажная
+                                            уборка салона <span class="right"></span></label>
+                                        </li>
+                                        <li  id="salon-4"><input type="checkbox"  id="salon-44"
+                                                                 class="filled-in-box"/><label for="salon-44"
+                                                                                               class="label_calc-salon-4">Все
+                                            стёкла<span class="right"></span></label>
+                                        </li>
+                                        <li  id="salon-5"><input type="checkbox" id="salon-55"
+                                                                 class="filled-in-box"/><label for="salon-55"
+                                                                                               class="label_calc-salon-5">Уборка
+                                            багажника пылесосом<span class="right"></span></label>
+                                        </li>
+                                        <li id="salon-6"><input type="checkbox"  id="salon-66"
+                                                                class="filled-in-box"/><label for="salon-66"
+                                                                                              class="label_calc-salon-6">Полироль
+                                            пластика<span class="right"></span></label>
+                                        </li>
+                                        <li  id="salon-7"><input type="checkbox"  id="salon-77"
+                                                                 class="filled-in-box"/><label for="salon-77"
+                                                                                               class="label_calc-salon-7">Мойка
+                                            резиновых ковриков<span class="right"></span></label>
+                                        </li>
+                                        <li id="salon-8"><input type="checkbox" id="salon-88"
+                                                                class="filled-in-box"/><label for="salon-88"
+                                                                                              class="label_calc-salon-8">Стирка
+                                            ворсовых ковриков (цена за 1 шт. С сушкой)<span class="right"></span></label>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
+                                         data-tooltip="Указана минимальная цена, увеличивается от степени загрязнения">
+                                        Химчистка салона<i class="fa fa-question-circle"></i>:
+                                    </div>
+                                    <ul class="chim-salon">
+                                        <li id="chim-salon-1"><input type="checkbox" id="chim-salon-11" class="filled-in-box"/><label
+                                                for="chim-salon-11">Потолок<span class="right"></span></label></li>
+                                        <li id="chim-salon-2"><input type="checkbox" id="chim-salon-22" class="filled-in-box"/><label
+                                                for="chim-salon-22">Пол<span class="right"></span></label></li>
+                                        <li id="chim-salon-3"><input type="checkbox" id="chim-salon-33" class="filled-in-box"/><label
+                                                for="chim-salon-33">Сиденья (1 шт.)<span class="right"></span></label></li>
+                                        <li id="chim-salon-4"><input type="checkbox" id="chim-salon-44" class="filled-in-box"/><label
+                                                for="chim-salon-44">Двери (1 шт.)<span class="right"></span></label></li>
+                                        <li id="chim-salon-5"><input type="checkbox" id="chim-salon-55" class="filled-in-box"/><label
+                                                for="chim-salon-55">Панель<span class="right"></span></label></li>
+                                        <li id="chim-salon-6"><input type="checkbox" id="chim-salon-66" class="filled-in-box"/><label
+                                                for="chim-salon-66">Багажник<span class="right"></span></label></li>
+                                    </ul>
+                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
+                                         data-tooltip="За возможные проблемы с запуском двигателя внутреннего сгорания, сотрудники автомойки ответственности не несут.">Двигатель<i class="fa fa-question-circle"></i>:
+                                    </div>
+                                    <ul class="engine">
+                                        <li id="engine-1"><input type="checkbox" id="engine-11" class="filled-in-box"/><label
+                                                for="engine-11">Мойка радиатора<span class="right"></span></label></li>
+                                        <li id="engine-2"><input type="checkbox" id="engine-22" class="filled-in-box"/><label
+                                                for="engine-22">Мойка двигателя и всего подкапотного пространства<span class="right"></span></label>
+                                        </li>
+                                    </ul>
+                                    <div class="card-title">Колеса:</div>
+                                    <ul class="coleso">
+                                        <li id="coleso-1"><input type="checkbox" id="coleso-11" class="filled-in-box"/><label
+                                                for="coleso-11">Чернение резины
+                                            <span class="right"></span></label></li>
+                                        <li id="coleso-2"><input type="checkbox" id="coleso-22" class="filled-in-box"/><label
+                                                for="coleso-22">Ополаскивание колес (за 1 колесо)
+                                            <span class="right"></span></label></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col s12 l3 m3 price-sm-hide">
+                                <div class="right">
+                                    <div class="price">
+                                        Итого
+                                        <div class="price-before tooltipped center " data-position="left"
+                                             data-delay="50" data-tooltip="Цена без коплекса">
+                                            <span>0</span> <i class="fa fa-rub"></i>
+
+                                        </div>
+                                        <div class="price-after center">
+                                            <span>0</span> <i class="fa fa-rub"></i>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 price-sm-show">
+                                <div class="col s4 alls">Итого:</div>
+                                <div class="col s8 price-text">
+                                    <span class="price-before tooltipped center " data-position="left"
+                                          data-delay="50" data-tooltip="Цена без коплекса">
+                                        <span>0</span> <i class="fa fa-rub"></i>
+                                    </span>
+                                    <span class="price-after center">
+                                        <span>0</span> <i class="fa fa-rub"></i>
+
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
 </div>
 <div class="container" id="clean">
     <div class="section">
@@ -54,19 +304,69 @@
                     <div class="item"><h4 class="center-align">Ваш автомобиль недостаточно чистый? </h4> </div>
                     <div class="item"><h4 class="center-align">На приборной панели остаётся пыль?</h4></div>
                     <div class="item"><h4 class="center-align">На стёклах мутные разводы?</h4></div>
-
                 </div>
 
 
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <p class="center-align flow-text">На автомойке <span>ГИДРОКАР</span> наши специалисты обслуживают Ваш автомобиль с соблюдением всех технологий мытья, чистки, сушки, уборки и других видов услуг. Мы используем автохимию только проверенных производителей!</p>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align flow-text">На автомойке <span>ГИДРОКАР</span> наши специалисты обслуживают Ваш автомобиль с соблюдением всех технологий мытья, чистки, сушки, уборки и других видов услуг. Мы используем автохимию только проверенных производителей!</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container scrollspy" id="contact">
+    <div class="row">
+        <div class="col l6 contact">
+            <h4 id="h4ios">Наши контакты</h4>
+            г.Нижневартовск <br/>
+            улица Мира 75 <small>(За ТЦ Премьер)</small> <br/>
+            <a href="tel:83466229222">8 (3466) 22-92-22</a> <br/>
+            <a href="mailto:marat.email@mail.ru">marat.email@mail.ru</a>
+
+
+
+        </div>
+        <div class="col l6">
+            <div class="row">
+                <h4>Форма обратной связи</h4>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Ваше имя</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="Введен некоректный email" data-success="Верно">Ваш Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="telephone" type="tel" class="validate">
+                            <label for="telephone" >Ваш телефон</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="textarea" class="materialize-textarea"></textarea>
+                            <label for="textarea">Сопроводительный текст</label>
+                        </div>
+                        <div class="input-field col s12">
+
+                            <button class="btn waves-effect waves-light btn-large firmbtn-o" type="submit" name="action">Отправить
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
+
+</div>
+<div class=" height-map">
+    <script type="text/javascript" charset="utf-8"
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QI435e6LLU-JcKFpbmDVm8Jt6RCCFZVf&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
+</div>
 <script src="https://yclients.com/js/ms.bookingwidget.js" type='text/javascript'></script>
 <script type="text/javascript" charset="utf-8">
     var MSWidgetOptions = {
