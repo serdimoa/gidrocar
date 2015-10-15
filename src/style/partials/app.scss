@@ -213,9 +213,12 @@ nav {
 }
 
 .parallax img {
-  transform: translate3d(-50%, 590.466px, 0px) !important;
+  transform: translate3d(-50%,300.47px,0)!important;
   left: 50%;
+  width: 130%;
   bottom: 0;
+  height: 150%;
+
 
 }
 
@@ -241,8 +244,8 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
 .card {
   box-shadow: none;
   .card-title {
-    line-height: 1.2pc !important;
     max-width: 300px !important;
+    font-size: 2em;
     i {
       font-size: .5em;
 
@@ -258,9 +261,16 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
   }
   .content {
     padding: 20px;
+    ul{
+      margin-top: 10px;
+    }
 
   }
 
+}
+
+.backdrop{
+  background-color: #51BFED;
 }
 
 .content .card-title {
@@ -314,6 +324,8 @@ ul {
   font-weight: 300;
   line-height: 1em;
   font-size: 1em;
+  color: #000000;
+
 }
 
 [type=radio] + label:after, [type=radio] + label:before {
@@ -350,6 +362,7 @@ label {
 }
 [type=checkbox]:checked+label{
   color: #51bfee;
+  font-weight: 700;
 }
 td>span::after {
   font: normal normal normal 14px/1 FontAwesome;
@@ -475,7 +488,6 @@ and (-webkit-min-device-pixel-ratio: 2){
   #ms-booking-button-container {
     bottom: 0 !important;
     top: auto !important;
-    display: block;
   }
   #index-banner {
     height: auto;
@@ -553,6 +565,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     opacity: 0;
   }
 
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -596,11 +609,26 @@ and (-webkit-min-device-pixel-ratio: 2){
   //font-family: "Open Sans", Georgia, sans-serif !important;
 }
 @media only screen and (min-width: 601px){
-  .nav-wrapper a img{
-    height: 70px;
-  }
+
   .button-collapse{
     margin-left: 100px;
+  }
+
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
+  #index-banner {
+    height: 980px;
+  }
+
+  .parallax img {
+    transform: translate3d(-53%,450.47px,0)!important;
+    left: 50%;
+    bottom: 0;
+    height: 140%;
+    width: 230%;
   }
 }
 @media only screen and (device-width: 768px) {
@@ -608,6 +636,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     margin-top: 0;
     margin-bottom: 0;
   }
+
   /* For general iPad layouts */
   .menuul{
     display: none !important;
@@ -625,4 +654,16 @@ and (-webkit-min-device-pixel-ratio: 2){
   .nav-wrapper a img{
     height: 70px;
   }
+}
+
+#download-button{
+  background: #F44336;
+  color: #FFFFFF;
+}
+#download-button:hover{
+  background-color: #4CAF50!important;
+  color: #ffffff!important;
+}
+li label{
+  padding-left: 35px !important;
 }
