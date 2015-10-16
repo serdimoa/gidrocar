@@ -9,8 +9,8 @@
             <h1 class="header center text-white">Профессиональная и Быстрая Мойка автомобилей</h1>
             <br/>
             <div class="row center">
-                <a  href="#calcinit" id="download-button2"  class="offset-m2  offset-s0 btn-large waves-effect waves-light firmbtn lighten-1 col s12 m4">Калькулятор цен</a>
-                <a href="#" id="download-button" onclick="MSWidget.showIframe();" class="btn-large waves-effect waves-light col s12 m4 firmbtn lighten-1">Онлайн-запись</a>
+                <a href="#" id="download-button" onclick="MSWidget.showIframe();" class="offset-m2 offset-s0 btn-large waves-effect waves-light col s12 m4 firmbtn lighten-1">Онлайн-запись</a>
+                <a  href="#calcinit" id="download-button2"  class="   btn-large waves-effect waves-light firmbtn lighten-1 col s12 m4">Калькулятор цен</a>
 
             </div>
             <br><br>
@@ -106,7 +106,7 @@
 
                                 <div id="content" class="content">
                                     <div class="row">
-                                        <div class="content">
+                                        <div class="content complexx">
                                             <div class="card-title width-100">Выберите комплекс или <br/>составьте свой список
                                                 услуг
                                             </div>
@@ -159,7 +159,7 @@
                                         <li id="base-4"><input type="checkbox" id="base-44"
                                                                class="filled-in-box"/><label
                                                 class=" label_calc-base-4" for="base-44">
-                                            Чистка кузова от насекомых, битума и т. п. (цена за 1 элемент)<span class="right "></span></label>
+                                            Чистка кузова от насекомых, битума и т. п. (за 1 элемент)<span class="right "></span></label>
                                         </li>
                                     </ul>
                                     <div class="card-title">Салон</div>
@@ -202,7 +202,7 @@
                                         <li id="salon-8"><input type="checkbox" id="salon-88"
                                                                 class="filled-in-box col s1"/><label for="salon-88"
                                                                                               class="label_calc-salon-8 ">Стирка
-                                            ворсовых ковриков (цена за 1 шт. С сушкой)<span class="right "></span></label>
+                                            ворсовых ковриков (за 1 шт. С сушкой)<span class="right "></span></label>
                                         </li>
                                     </ul>
 
@@ -241,7 +241,7 @@
                                                 for="coleso-11">Чернение резины
                                             <span class="right "></span></label></li>
                                         <li id="coleso-2"><input type="checkbox" id="coleso-22" class="filled-in-box"/><label
-                                                for="coleso-22">Ополаскивание колес (за 1 колесо)
+                                                for="coleso-22">Ополаскивание колес(1 колесо)
                                             <span class="right "></span></label></li>
                                     </ul>
                                 </div>
@@ -264,9 +264,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col s12 price-sm-show hide-on-med-and-up">
-                                <div class="col s4 alls">Итого:</div>
-                                <div class="col s8 price-text">
+
+
+                    </div>
+                        <div class="row price-sm-show hide-on-large-only">
+                            <div class="col offset-m4 m2 s4 alls ">Итого:</div>
+                            <div class="col m4 s8 price-text">
                                     <span class="price-before tooltipped center " data-position="left"
                                           data-delay="50" data-tooltip="Цена без коплекса">
                                         <span>0</span> <i class="fa fa-rub"></i>
@@ -275,16 +278,14 @@
                                         <span>0</span> <i class="fa fa-rub"></i>
 
                                     </span>
-                                </div>
-
                             </div>
-                            <div class="row"><a onclick="event.preventDefault() ;MSWidget.showIframe();" class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos hide-on-large-only" href="#">Онлайн-запись</a>
+
+                        </div>
+                        <div class="row"><a onclick="event.preventDefault() ;MSWidget.showIframe();" class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos hide-on-large-only" href="#">Онлайн-запись</a>
 
 
 
                         </div>
-
-                    </div>
 
 
                 </div>
@@ -297,6 +298,7 @@
 
 </div>
 </div>
+
 <div class="container" id="clean">
     <div class="section">
         <div class="row ">
@@ -333,7 +335,7 @@
         <div class="col l6">
             <div class="row">
                 <h4>Форма обратной связи</h4>
-                <form class="col s12">
+                <form class="">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="icon_prefix" type="text" class="validate">
@@ -365,6 +367,7 @@
     </div>
 
 </div>
+
 <div class=" height-map">
     <script type="text/javascript" charset="utf-8"
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QI435e6LLU-JcKFpbmDVm8Jt6RCCFZVf&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
@@ -381,4 +384,6 @@
     };
     MSWidget.initWidget(MSWidgetOptions);
 </script>
+<a class="phonestick hide-on-med-and-up" href="tel:83466229222"><i class="material-icons Medium ">phone</i>
+</a>
 //= template/footer.html
