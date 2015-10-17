@@ -7,6 +7,9 @@
   font-style: normal;
 }
 
+a{
+  color:#51bfee;
+}
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -215,7 +218,7 @@ nav {
 .parallax img {
   transform: translate3d(-50%,300.47px,0)!important;
   left: 50%;
-  width: 130%;
+  width: 100%;
   bottom: 0;
   height: 150%;
 
@@ -245,6 +248,8 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
   box-shadow: none;
   .card-title {
     max-width: 300px !important;
+    font-family: "Conv_BloggerSans", Georgia, sans-serif;
+
     font-size: 2em;
     i {
       font-size: .5em;
@@ -260,7 +265,6 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
     margin-top: 40px;
   }
   .content {
-    padding: 20px;
     ul{
       margin-top: 10px;
     }
@@ -268,7 +272,23 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
   }
 
 }
-
+.phonestick{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-size: contain;
+  height: 5em;
+  width: 5em;
+  background-color: #51BFED;
+  text-align: center;
+  i{
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #ffffff;
+    transform: rotate(260deg);
+  }
+}
 .backdrop{
   background-color: #51BFED;
 }
@@ -295,6 +315,8 @@ ul {
 .firmbtn {
   background-color: #ffffff;
   color: #51bfed;
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
+
 }
 
 .firmbtn-o {
@@ -341,7 +363,7 @@ ul {
 
 }
 
-tr {
+.content ul li {
   border-bottom: 0.07em dotted #5A5A5A;
 
 }
@@ -370,6 +392,9 @@ td>span::after {
   float: right;
 }
 
+.price-sm-show{
+  margin-bottom: 25px;
+}
 .section h3 {
   text-align: center;
   background: url("../img/арома.svg") no-repeat center;
@@ -473,14 +498,35 @@ and (-webkit-min-device-pixel-ratio: 2){
     padding-left: 0px;
   }
 }
+.price-before {
+  color: #e00d0d;
+  span {
+    text-decoration: line-through;
+  }
+}
+.price-after {
+  color: #34A853;
+}
+.alls{
+}
 
 @media only screen and (max-width: 640px) {
-
-  .row .col {
+  #time p, #clean p{
+    font-size: 1em;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .complexx{
+    padding-left: 15px;
+  }
+  #calcinit .row .col {
     padding: 0;
   }
+
   .browser-default{
     display: block !important;
+    margin-bottom: 10px;
   }
   .tabs{
     display: none;
@@ -518,7 +564,9 @@ and (-webkit-min-device-pixel-ratio: 2){
   .price-sm-hide {
     display: none;
   }
-
+  .parallax img{
+    width:auto;
+  }
   .price-sm-show {
     font-size: 3em;
     border: #51bfed 3px solid;
@@ -530,6 +578,9 @@ and (-webkit-min-device-pixel-ratio: 2){
     margin-top: -12px;
     margin-right: 3px;
     background: #fff;
+    .row .col{
+      padding: 0 .75rem!important;
+    }
     .price-before {
       span {
         text-decoration: line-through;
@@ -537,16 +588,24 @@ and (-webkit-min-device-pixel-ratio: 2){
       color: #e00d0d;
       font-size: .5em;
       display: none;
+
     }
 
     .price-after {
       color: #34A853;
       font-size: .5em;
     }
-    .alls {
-      font-size: 0.7em;
-      padding: 15px 0;
+    .price-text{
+      margin-top: -10px;
     }
+    .alls {
+      font-size: 0.5em;
+      padding: 15px 15px 15px 0 !important;
+    }
+  }
+  .width-100{
+    font-size: 1.5em !important;
+    line-height: 1em !important;
   }
 }
 .price-text{
@@ -584,10 +643,7 @@ and (-webkit-min-device-pixel-ratio: 2){
   .parallax-container {
     height: 60pc;
   }
-  .parallax img {
-    -webkit-transform: translate3d(-50%, 500.47px, 0) !important;
-    transform: translate3d(-50%, 500.47px, 0) !important;
-  }
+
 
   #clean h4 {
     font-size: 4em;
@@ -656,14 +712,11 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
   }
 }
 
-#download-button{
-  background: #F44336;
-  color: #FFFFFF;
-}
+
 #download-button:hover{
   background-color: #4CAF50!important;
   color: #ffffff!important;
 }
 li label{
-  padding-left: 35px !important;
+  padding-left: 25px !important;
 }
