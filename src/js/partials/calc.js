@@ -239,12 +239,12 @@ function Radio_check() {
         $("#salon-4 input").prop("checked") &&
         $("#salon-7 input").prop("checked") &&
         $("#salon-1 input").prop("checked") &&
-        $("#salon-3 input").prop("checked") && !$("#salon-6").prop("checked") && !$("#coleso-1").prop("checked")
+        $("#salon-3 input").prop("checked") && !$("#salon-6 input").prop("checked") && !$("#coleso-1 input").prop("checked")
     ) {
         $("#complex-1 ").prop("checked", true);
         price_change($("#complex-1").val());
     }
-    else if ($("#base-3 ").prop("checked") &&
+    else if ($("#base-3 input").prop("checked") &&
         $("#salon-4 input").prop("checked") &&
         $("#salon-7 input").prop("checked") &&
         $("#salon-1 input").prop("checked") &&

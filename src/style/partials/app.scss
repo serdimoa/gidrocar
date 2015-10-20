@@ -150,7 +150,10 @@ nav {
 
   }
 }
+h4,h5,.alls{
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
 
+}
 #time h2 {
   font-family: "Conv_BloggerSans", Georgia, sans-serif;
 
@@ -276,6 +279,7 @@ input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 2500000;
   border-radius: 50%;
   background-size: contain;
   height: 5em;
@@ -313,24 +317,36 @@ ul {
 }
 
 .firmbtn {
-  background-color: #ffffff;
-  color: #51bfed;
+  background-color: #4FB5DF;
+  color: #fff;
+  border: 1px solid #fff;
   font-family: "Conv_BloggerSans", Georgia, sans-serif;
 
 }
 
-.firmbtn-o {
-  color: #ffffff;
-  background-color: #51bfed;
+.firmbtn.o {
+  background-color: #ffffff;
+  color: #51bfed;
 }
 
 .firmbtn:hover {
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #fff;
+  color: #4FB5DF;
+  border:2px solid #51bfed;
+}
+.firmbtn.o:hover {
+  background-color: #4FB5DF!important;
+  color: #fff!important;
 }
 
-
-
+.tooltipster-default{
+  border-radius: 5px;
+  border: 2px solid #51bfed;
+  background: #51bfed;
+  color: #fff;
+  z-index: 5;
+  max-width: 400px;
+}
 
 
 .borders {
@@ -367,11 +383,19 @@ ul {
   border-bottom: 0.07em dotted #5A5A5A;
 
 }
+img.responsive-img, video.responsive-video{
+  height: auto;
+  width: auto;
+  max-width:  inherit ;
+}
 .content{
   ul{
     margin-top: 10px;
     li{
       margin-top: 5px;
+      padding-bottom: 10px;
+      padding-top: 6px;
+
     }
   }
 }
@@ -384,7 +408,7 @@ label {
 }
 [type=checkbox]:checked+label{
   color: #51bfee;
-  font-weight: 700;
+  font-weight: 600;
 }
 td>span::after {
   font: normal normal normal 14px/1 FontAwesome;
@@ -409,6 +433,8 @@ td>span::after {
 .dropdown1>li{
   cursor:pointer;
 }
+.firmbtn{
+}
 .dropdown-button {
   width: 100%;
   display: none;
@@ -430,6 +456,7 @@ td>span::after {
   padding: 15px;
   opacity: 0;
   z-index: 2;
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
 
   margin-right: 3px;
   background: #fff;
@@ -481,7 +508,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     opacity: 0;
   }
 .nav-wrapper a img{
-  width: 300px;
 }
   .browser-default{
     display: block !important;
@@ -492,7 +518,6 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
 @media only screen and (max-width: 1151px){
   .nav-wrapper a img{
-    width: 300px;
   }
   nav a.button-collapse i{
     padding-left: 0px;
@@ -508,6 +533,8 @@ and (-webkit-min-device-pixel-ratio: 2){
   color: #34A853;
 }
 .alls{
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -536,7 +563,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     top: auto !important;
   }
   #index-banner {
-    height: auto;
+    height: 568px;
   }
   .section {
     margin-top: 0;
@@ -619,15 +646,16 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
 
 @media only screen and (min-width: 1025px) {
-  .price-sm-show {
-    display: none;
-    opacity: 0;
-  }
+
+
 
 
 }
 
 @media only screen and (min-width: 1920px) {
+  .hide-on-l-only{
+    display: none;
+  }
   #index-banner h1 {
     margin-top: 1.5em;
     font-size: 6.2em;
@@ -708,15 +736,134 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
     margin-left: 100px;
   }
   .nav-wrapper a img{
-    height: 70px;
   }
 }
-
-
-#download-button:hover{
-  background-color: #4CAF50!important;
-  color: #ffffff!important;
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .hide-on-l-only{
+    display: none;
+  }
 }
+@media (max-device-width: 1280px)
+and (orientation: landscape) {
+  .hide-on-l-only {
+    display: block;
+  }
+  .nav ul li{
+    line-height: 1em;
+    a {
+      padding: 0;
+      line-height: 1em;
+
+    }
+  }
+  .contact_menu{
+    max-width: 200px;
+  }
+}
+.fa30{
+  font-size: 30px;
+}
+.notif-box {
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  padding: 22px;
+  width: 100%;
+  font-size: 90%;
+  line-height: 1.4;
+  -webkit-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.notif-box.show-up {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.notif-box p {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0 3.2em;
+  font-size: 1.2em;
+}
+
+.notif-box span.notif-icon{
+  position: absolute;
+  top: 50%;
+  left: .6em;
+  display: block;
+  font-size: 28px;
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-transform: translate3d(0,-50%,0);
+  -ms-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
+}
+
+.notif-box.show-up span.notif-icon {
+  opacity: 1;
+}
+
+.notif-box a.notification-close {
+  position: absolute;
+  top: 15%;
+  right: 1em;
+  visibility: visible;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  background: url("../img/cd-icon-close.svg") center center no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.4s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.4s;
+  transition: transform 0.3s 0s, visibility 0s 0.4s;
+}
+
+.notif-box a.notification-close:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#error-notification,
+#subscribe-error-notification,
+#hero-error-notification {
+  background: #cc3530;
+  color: rgba(250, 251, 255, 0.95);
+}
+
+#error-notification.notif-box,
+#subscribe-error-notification.notif-box,
+#hero-error-notification.notif-box {
+  box-shadow: inset 4.5em 0 #b80d07;
+}
+
+#success-notification,
+#subscribe-success-notification,
+#hero-success-notification {
+  background: #19a9e5;
+  color: rgba(250, 251, 255, 0.95);
+}
+
+#success-notification.notif-box
+#subscribe-success-notification.notif-box,
+#hero-success-notification.notif-box {
+  box-shadow: inset 4.5em 0 #13a0db;
+}
+
 li label{
   padding-left: 25px !important;
 }

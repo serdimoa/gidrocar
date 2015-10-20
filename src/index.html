@@ -1,19 +1,17 @@
 //= template/header.html
 
-<div id="index-banner" class="parallax-container scrollspy ">
+<div id="index-banner" class="parallax-container scrollspy  valign-wrapper">
     <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <br><br>
-            <br><br>
+        <div class="container ">
+            <div class="valign">
             <h1 class="header center text-white">Профессиональная и Быстрая Мойка автомобилей</h1>
             <br/>
             <div class="row center">
-                <a href="#" id="download-button" onclick="MSWidget.showIframe();" class="offset-m2 offset-s0 btn-large waves-effect waves-light col s12 m4 firmbtn lighten-1">Онлайн-запись</a>
-                <a  href="#calcinit" id="download-button2"  class="   btn-large waves-effect waves-light firmbtn lighten-1 col s12 m4">Калькулятор цен</a>
+                <a href="#" id="download-button" onclick="MSWidget.showIframe();" class="offset-m2 offset-s0 btn-large waves-effect waves-light col s12 m4 firmbtn lighten-1 o">Онлайн-запись</a>
+                <a  href="#"  id="download-button2"   class="   btn-large waves-effect waves-light firmbtn lighten-1 col s12 m4 o">Калькулятор цен</a>
 
             </div>
-            <br><br>
+            </div>
 
         </div>
     </div>
@@ -36,22 +34,22 @@
     <hr/>
 
 </div>
-<div id="calcu" class="scrollspy">
+<div id="calcu" class=" scrollspy">
 <div class="container " id="calc">
     <div class="section">
         <div class="row">
             <div class="col s12"><h4 class="center-align">На автомойке <span>ГИДРОКАР</span> вы получите самые качественные услуги для вашего авто по самым приятным ценам в городе.</h4></div>
         </div>
-        <div class="row"><a class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos hide-on-med-and-down" href="#calcinit">Калькулятор цен</a>
+        <div class="row"><a class="waves-effect waves-light btn firmbtn btn-large  hide-on-med-and-down col m4 center-pos offset-m4" href="#calcinit">Калькулятор цен</a>
         </div>
     </div>
-    <hr/>
+    <hr  id="form"/>
 
 </div>
 
-<div class="container scrollspy" id="calcinit">
-    <div class="row">
-        <form action="#">
+<div class="container" id="calcinit">
+    <div class="row" >
+        <form class="" action="#">
             <div class="col s12">
                 <div class="card">
                     <div class="card-content">
@@ -62,21 +60,21 @@
 
                             <div class="tabs">
                                 <ul class="tabs">
-                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
-                                        data-tooltip=" Все ВАЗы, Matiz, Spark, Yaris, Polo"><a href="#" data-id="1"><img src="img/metiz.png"
+                                    <li class="tab col s2 tooltipps"   
+                                        title=" Все ВАЗы, Matiz, Spark, Yaris, Polo"><a href="#" data-id="1"><img src="img/metiz.png"
                                                                                                                          alt="lada"/></a>
                                     </li>
-                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
-                                        data-tooltip=" Prius, Corolla, Camry, Jetta, BMW 3-5">
+                                    <li class="tab col s2 tooltipps"   
+                                        title=" Prius, Corolla, Camry, Jetta, BMW 3-5">
                                         <a href="#"  data-id="2"><img src="img/camry.png" alt="camry"/></a>
                                     </li>
-                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
-                                        data-tooltip=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">
+                                    <li class="tab col s2 tooltipps"   
+                                        title=" Все кроссоверы, Нива 5 дв, Шнива, Отечественные пикапы">
                                         <a href="#" data-id="3"> <img src="img/subaru.png" alt="subaru"/></a>
                                     </li>
                                     <li class="tab col s2" ><a data-id="5" href="#"><img src="img/hummer-h3.png" alt="hummer"/></a></li>
-                                    <li class="tab col s2 tooltipped"  data-position="bottom" data-delay="50"
-                                        data-tooltip="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">
+                                    <li class="tab col s2 tooltipps"   
+                                        title="Минивэны (до 8 посадочных мест), полноразмерные внедорожники, микроавтобусы">
                                         <a href="#" data-id="4"><img src="img/gaz.png" alt="Gaz"/></a>
                                     </li>
 
@@ -112,23 +110,23 @@
                                             </div>
 
                                             <ul class="complex">
-                                                <li class="left pLeftLi tooltipped" data-position="bottom"
-                                                    data-delay="50"
-                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона">
+                                                <li class="left pLeftLi tooltipps" 
+                                                    
+                                                    title="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона">
                                                     <input type="radio" name="complex"
                                                            title="complex-1"
                                                            id="complex-1"/><label
                                                         class="label_calc" for="complex-1">Комплекс mini</label></li>
-                                                <li class="left pLeftLi tooltipped" data-position="bottom"
-                                                    data-delay="50"
-                                                    data-tooltip=" Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона">
+                                                <li class="left pLeftLi tooltipps" 
+                                                    
+                                                    title=" Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона">
                                                     <input type="radio" name="complex"
                                                            title="complex-2"
                                                            id="complex-2"/><label
                                                         class="label_calc" for="complex-2">Комплекс midle</label></li>
-                                                <li class="left pLeftLi tooltipped" data-position="bottom"
-                                                    data-delay="50"
-                                                    data-tooltip="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона + воск кузова + чернение резины">
+                                                <li class="left pLeftLi tooltipps" 
+                                                    
+                                                    title="Бесконтактная мойка, коврики, протирка, все стекла, влажная и сухая уборка салона + полировка пластика салона + воск кузова + чернение резины">
                                                     <input type="radio" name="complex"
                                                            title="complex-3"
                                                            id="complex-3"/><label
@@ -137,8 +135,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
-                                         data-tooltip="За повреждение некачественного лакокрасочного слоя автомобиля, сотрудники автомойки
+                                    <div class="card-title tooltipps" 
+                                         title="За повреждение некачественного лакокрасочного слоя автомобиля, сотрудники автомойки
 ответственности не несут.">Кузов<i class="fa fa-question-circle"></i></div>
                                     <ul class="base">
                                         <li id="base-1"><input type="checkbox" id="base-11"
@@ -207,8 +205,8 @@
                                     </ul>
 
 
-                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
-                                         data-tooltip="Указана минимальная цена, увеличивается от степени загрязнения">
+                                    <div class="card-title tooltipps" 
+                                         title="Указана минимальная цена, увеличивается от степени загрязнения">
                                         Химчистка салона<i class="fa fa-question-circle"></i>:
                                     </div>
                                     <ul class="chim-salon">
@@ -225,8 +223,8 @@
                                         <li id="chim-salon-6"><input type="checkbox" id="chim-salon-66" class="filled-in-box"/><label
                                                 for="chim-salon-66">Багажник<span class="right "></span></label></li>
                                     </ul>
-                                    <div class="card-title tooltipped" data-position="top" data-delay="50"
-                                         data-tooltip="За возможные проблемы с запуском двигателя внутреннего сгорания, сотрудники автомойки ответственности не несут.">Двигатель<i class="fa fa-question-circle"></i>:
+                                    <div class="card-title tooltipps" data-position="top" 
+                                         title="За возможные проблемы с запуском двигателя внутреннего сгорания, сотрудники автомойки ответственности не несут.">Двигатель<i class="fa fa-question-circle"></i>:
                                     </div>
                                     <ul class="engine">
                                         <li id="engine-1"><input type="checkbox" id="engine-11" class="filled-in-box"/><label
@@ -251,8 +249,8 @@
                                 <div class="right">
                                     <div class="price">
                                         Итого
-                                        <div class="price-before tooltipped center " data-position="left"
-                                             data-delay="50" data-tooltip="Цена без коплекса">
+                                        <div class="price-before tooltipps center " data-position="left"
+                                              title="Цена без коплекса">
                                             <span>0</span> <i class="fa fa-rub"></i>
 
                                         </div>
@@ -267,11 +265,11 @@
 
 
                     </div>
-                        <div class="row price-sm-show hide-on-large-only">
+                        <div class="row price-sm-show hide-on-l-only">
                             <div class="col offset-m4 m2 s4 alls ">Итого:</div>
                             <div class="col m4 s8 price-text">
-                                    <span class="price-before tooltipped center " data-position="left"
-                                          data-delay="50" data-tooltip="Цена без коплекса">
+                                    <span class="price-before tooltipps center " data-position="left"
+                                           title="Цена без коплекса">
                                         <span>0</span> <i class="fa fa-rub"></i>
                                     </span>
                                     <span class="price-after center">
@@ -281,10 +279,7 @@
                             </div>
 
                         </div>
-                        <div class="row"><a onclick="event.preventDefault() ;MSWidget.showIframe();" class="waves-effect waves-light btn firmbtn firmbtn-o btn-large center-pos hide-on-large-only" href="#">Онлайн-запись</a>
-
-
-
+                        <div class="row"><a onclick="event.preventDefault() ;MSWidget.showIframe();" class="col s12 l4 m4 center-block waves-effect waves-light btn firmbtn  btn-large center-pos hide-on-l-only offset-m4 " href="#">Онлайн-запись</a>
                         </div>
 
 
@@ -292,6 +287,7 @@
 
 
             </div>
+                </div>
         </form>
 
     </div>
@@ -336,7 +332,7 @@
         <div class="col l6">
             <div class="row">
                 <h4>Форма обратной связи</h4>
-                <form class="">
+                <form  class="">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="icon_prefix" type="text" class="validate">
@@ -356,7 +352,7 @@
                         </div>
                         <div class="input-field col s12">
 
-                            <button class="btn waves-effect waves-light btn-large firmbtn-o" type="submit" name="action">Отправить
+                            <button class="btn-large waves-effect waves-light firmbtn lighten-1 col s12 m7 l7" id="hero-submit" type="submit" name="action">Отправить
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>

@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".nav-wrapper img").css({"width": "200px"});
     }
     if (bowser.msie) {
-        $(".nav-wrapper img ").css({"width": "300"});
+        $(".nav-wrapper img ").css({"width": "300px"});
 
     }
     if (bowser.ios) {
@@ -19,6 +19,7 @@ $(document).ready(function () {
         $("#h4ios").addClass("iosfontfix");
         $("#index-banner h1, #time h2, .header, #calc h4, #calc h4 span, #clean h4, #clean p span, #time p span").addClass("iosfontfix");
         $('#content').show(1000);
+        $(".menuul").hide();
         $('.price-sm-show').css("opacity", 1);
         //$("#phone")
     }
@@ -83,7 +84,87 @@ $(document).ready(function () {
 
     $('.scrollspy').scrollSpy();
 
+    $('#download-button2').click(function(){
+        $.scrollTo($("#calcinit"),1000,{offset:-100});
+        return false;});
 
+    $('.tooltipps').tooltipster({
+        touchDevices: false,
+        debug: false
+
+    });
+
+
+
+});
+
+
+$('#hero-submit').click(function(e){
+
+    // Stop form submission & check the validation
+    e.preventDefault();
+
+    // Variable declaration
+    var error = false;
+    var telephone = $('#telephone').val();
+    var email = $('#email').val();
+    var username = $('#icon_prefix').val();
+    var message = $('#textarea').val();
+    if(username.length == 0){
+        var error = true;
+    }
+    if(email.length == 0 || email.indexOf('@') == '-1'){
+        var error = true;
+    }
+    if(telephone.length == 0){
+        var error = true;
+    }
+    if(message.length == 0){
+        var error = true;
+
+    }
+
+    if(error == true){
+        $('#hero-error-notification').addClass('show-up');
+    }else{
+        $('#hero-error-notification').removeClass('show-up');
+    }
+
+
+    if(error == false) {
+        $.ajax({
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                "key": "9OckqJjdpKNbs3X5PJKJqg",
+                "message": {
+                    "from_email": "" + email + "",
+                    "to": [
+                        {
+                            "email": "marat.email@mail.ru",
+                            "name": "Blog",
+                            "type": "to"
+                        }
+                    ],
+                    "autotext": "true",
+                    "subject": "Форма обратной связи ",
+                    "html": "Сообщение с сайта <br/> Имя:" + username + "<br>Email:" + email + "<br>Телефон:" + telephone + "<br>Сообщение:" + message
+                }
+            }, success: function () {
+                $('#hero-error-notification').removeClass('show-up');
+                $('#hero-success-notification').addClass('show-up');
+                $('#hero-submit').addClass('disabled');
+            },
+            error: function() {
+                $('#hero-error-notification').addClass('show-up');
+            }
+
+        })
+    }});
+
+
+// Function to close the Notification
+$('a.notification-close').click(function(){
+    $(this).parent('div').removeClass('show-up');
 });
 
 
