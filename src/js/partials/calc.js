@@ -5,7 +5,10 @@
 var calc_price = 0;
 var calc_priceBefore = $(".price-before span ");
 var calc_priceAfter = $(".price-after span ");
-// Оюъект цен
+/**
+ * Оюъект цен
+  */
+
 var Category_value = function (base, salon, him, engine, coleso, discount) {
 
     this.base = base;
@@ -18,7 +21,10 @@ var Category_value = function (base, salon, him, engine, coleso, discount) {
 
 };
 
-// Функция инициализации
+/**
+ * Функция добавления value
+ */
+
 Category_value.prototype.init = function () {
     this.base.forEach(function (value, i) {
         i += 1;
@@ -67,11 +73,13 @@ Category_value.prototype.init = function () {
     }
 };
 
-var Calcinit = function (param) {
+/**
+ *  Класс калькулятора
+ * @param param
+ * @constructor
+ */
 
-
-
-    this.param = param;
+var Calcinit = function () {
 
 
     //Обработка чекбоксов
@@ -109,7 +117,9 @@ var Calcinit = function (param) {
             }
         }
     });
-
+    /**
+     * Обработка радиобатонов
+     */
     $(":radio").on('change', function () {
         switch ($(this).attr("id")) {
             case "complex-1":
@@ -123,6 +133,7 @@ var Calcinit = function (param) {
                 complex(complex_2_value);
                 price_change($(this).val());
                 $("#coleso-1").prop("checked", false);
+
                 break;
 
             case "complex-3":
@@ -133,8 +144,12 @@ var Calcinit = function (param) {
 
         }
     });
-
+    /**
+     * Обработка при нажатии комлекса
+     * @param e
+     */
     function complex(e) {
+        $("#base-3 input,#salon-4 input,#salon-7 input,#salon-1 input,#salon-3 input,#salon-6 input,#coleso-1 input").prop("checked", false);
 
         e.base.forEach(function (val) {
             $("#base-" + val+" input").prop("checked", true);
@@ -150,57 +165,30 @@ var Calcinit = function (param) {
         }
 
 
+
     }
 
-
-    //Обработка чекбоксов Салон
-    //calc_salon.on('change', function () {
-    //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-name"));
-    //    }
-    //    else {
-    //        price_change_del($(this).attr("data-name"));
-    //    }
-    //});
-    //
-    ////Обработка чекбоксов Химчастка салона
-    //calc_chimSalon.on('change', function () {
-    //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-name"));
-    //    }
-    //    else {
-    //        price_change_del($(this).attr("data-name"));
-    //    }
-    //});
-    //
-    ////Обработка чекбоксов Двигатель
-    //calc_engine.on('change', function () {
-    //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-name"));
-    //    }
-    //    else {
-    //        price_change_del($(this).attr("data-name"));
-    //    }
-    //});
-    //
-    ////Обработка чекбоксов Колеса
-    //calc_coleso.on('change', function () {
-    //    if ($(this).is(":checked")) {
-    //        price_change_add($(this).attr("data-name"));
-    //    }
-    //    else {
-    //        price_change_del($(this).attr("data-name"));
-    //    }
-    //});
-
-    // (+) к стоимости
 
 
 
 
 };
 
+/**
+ * Функция очистки
+ */
+Calcinit.prototype.clean = function () {
 
+        $(":checkbox").prop('checked', false);
+        $(":radio").prop('checked', false);
+    price_change();
+
+};
+/**
+ * Функция инициализации значений по категориям
+ * @param param
+ *
+ */
 Calcinit.prototype.init = function (param) {
     this.param = param;
     switch (this.param) {
@@ -231,9 +219,29 @@ Calcinit.prototype.init = function (param) {
             break;
     }
 };
+
+/**
+ * 1 комплекс, указывает на id чекбокса который нужно нажать
+ * @type {{base: number[], salon: number[]}}
+ */
 var complex_1_value = {base: [3], salon: [7, 2,4, 1, 3]};
+
+/**
+ * 2 комплекс, указывает на id чекбокса который нужно нажать
+ * @type {{base: number[], salon: number[]}}
+ */
 var complex_2_value = {base: [3], salon: [7, 2,4, 1, 3, 6]};
+
+/**
+ * 3 комплекс, указывает на id чекбокса который нужно нажать
+ * @type {{base: number[], salon: number[], koleso: number[]}}
+ */
 var complex_3_value = {base: [3], salon: [7, 2,4, 1, 3, 6], koleso: [1]};
+
+/**
+ * Проверка чекбоксов для включения скидок
+ * @constructor
+ */
 function Radio_check() {
     if ($("#base-3 input").prop("checked") &&
         $("#salon-4 input").prop("checked") &&
@@ -280,7 +288,10 @@ function Radio_check() {
     }
 
 }
-
+/**
+ * Проверкаизменения цен, и включения скидочного блока
+ * @param vals
+ */
 function price_change (vals) {
     calc_price = 0;
     var discount = vals;

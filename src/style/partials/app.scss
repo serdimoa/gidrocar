@@ -36,7 +36,6 @@ hr {
   display: table;
 }
 
-// FIXME :homepage
 
 // todo :Навигация
 nav {
@@ -421,7 +420,7 @@ td>span::after {
 }
 .section h3 {
   text-align: center;
-  background: url("../img/арома.svg") no-repeat center;
+  background: url("../img/aroma.svg") no-repeat center;
   height: 100px;
   background-size: contain;
   i {
@@ -448,12 +447,27 @@ td>span::after {
   z-index: 1;
   width: 16.66667%;
 }
-
+.clean{
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.cleansm{
+  font-family: "Conv_BloggerSans", Georgia, sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.clean:hover{
+  border-bottom: 3px dotted #51BFED;
+}
 .price {
   font-size: 2.5em;
   border: #51bfed 3px solid;
   cursor: pointer;
-  padding: 15px;
+  padding: 13px;
   opacity: 0;
   z-index: 2;
   font-family: "Conv_BloggerSans", Georgia, sans-serif;
