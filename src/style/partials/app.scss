@@ -894,6 +894,7 @@ li label{
 	z-index:9999999999;
 	color:#fff;
 }
-.tabs .tab a{
-	z-index:99999999;
+.tabs .tab .ios.active{
+	color:#51bfed!important;
 }
+
