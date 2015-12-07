@@ -195,7 +195,7 @@ Calcinit.prototype.init = function (param) {
             break;
         case 2:
             var category_2 = new Category_value(
-                [250, 300, 60, 50, 50], [90, 110, 100, 100, 50, 50], [1200, 1100, 500, 500, 1000, 1000], [100, 300], [100, 50], [80, 80, 80]);
+                [250, 300, 60, 50, 50], [70, 90, 110, 100, 100, 50, 50], [1200, 1100, 500, 500, 1000, 1000], [100, 300], [100, 50], [80, 80, 80]);
             category_2.init();
             break;
         case 3:
@@ -205,7 +205,7 @@ Calcinit.prototype.init = function (param) {
             break;
         case 4:
             var category_4 = new Category_value(
-                [350, 400, 90, 60, 50], [100, 110, 130, 100, 120, 50, 50], [1400, 1300, 700, 700, 1200, 1200], [100, 400], [110, 60], [120, 120, 120]);
+                [350, 400, 90, 60, 50], [100, 110, 130, 100, 120, 50, 50], [1400, 1300, 700, 700, 1200, 1200], [100, 400], [110, 60], [140, 140, 140]);
             category_4.init();
             break;
         case 5:
@@ -215,7 +215,7 @@ Calcinit.prototype.init = function (param) {
             break;
         case 6:
             var category_6 = new Category_value(
-                [500, 550, 110, 60, 50], [110, 250, 200, 100, 150, 50, 50], [1800, 1700, 900, 900, 1900, 1900], [100, 550], [140, 70], [240, 240, 240]);
+                [500, 550, 110, 60, 50], [110, 250, 200, 100, 150, 50, 50], [1800, 1700, 900, 900, 1900, 1900], [100, 550], [140, 70], [250, 250, 250]);
             category_6.init();
             break;
     }
@@ -225,19 +225,19 @@ Calcinit.prototype.init = function (param) {
  * 1 ��������, ��������� �� id �������� ������� ����� ������
  * @type {{base: number[], salon: number[]}}
  */
-var complex_1_value = {base: [2,3], salon: [6, 2, 3, 1]};
+var complex_1_value = {base: [2,3], salon: [ 2, 3, 1]};
 
 /**
  * 2 ��������, ��������� �� id �������� ������� ����� ������
  * @type {{base: number[], salon: number[]}}
  */
-var complex_2_value = {base: [2,3], salon: [6, 2, 3, 1, 5]};
+var complex_2_value = {base: [2,3], salon: [ 2, 3, 1, 5]};
 
 /**
  * 3 ��������, ��������� �� id �������� ������� ����� ������
  * @type {{base: number[], salon: number[], koleso: number[]}}
  */
-var complex_3_value = {base: [2,3], salon: [6, 2, 3, 1, 5], koleso: [1]};
+var complex_3_value = {base: [2,3], salon: [ 2, 3, 1, 5], koleso: [1]};
 
 /**
  * �������� ��������� ��� ��������� ������
@@ -246,7 +246,6 @@ var complex_3_value = {base: [2,3], salon: [6, 2, 3, 1, 5], koleso: [1]};
 function Radio_check() {
     if ($("#base-3 input").prop("checked") &&
         $("#base-2 input").prop("checked") &&
-        $("#salon-6 input").prop("checked") &&
         $("#salon-2 input").prop("checked") &&
         $("#salon-3 input").prop("checked") &&
         $("#salon-5 input").prop("checked") && !$("#salon-5 input").prop("checked") && !$("#coleso-1 input").prop("checked")
@@ -256,7 +255,6 @@ function Radio_check() {
     }
     else if ($("#base-3 input").prop("checked") &&
         $("#base-2 input").prop("checked") &&
-        $("#salon-6 input").prop("checked") &&
         $("#salon-2 input").prop("checked") &&
         $("#salon-3 input").prop("checked") &&
         $("#salon-5 input").prop("checked") && !$("#coleso-1 input").prop("checked")
@@ -266,7 +264,6 @@ function Radio_check() {
     }
     else if ($("#base-3 input").prop("checked") &&
         $("#base-2 input").prop("checked") &&
-        $("#salon-6 input").prop("checked") &&
         $("#salon-2 input").prop("checked") &&
         $("#salon-3 input").prop("checked") &&
         $("#salon-5 input").prop("checked") &&

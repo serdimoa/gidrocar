@@ -71,6 +71,7 @@ nav {
 }
 .browser-default{
   display: none !important;
+  border:1px solid #51BFED;
 }
 .contact_menu {
   margin-top: 2em;
@@ -657,6 +658,10 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
 .tabs .tab a.active{
   border: 0;
+  color:#fff;
+}
+.tabs .tab a{
+	color:#50BFED;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -720,6 +725,9 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
   #index-banner {
     height: 980px;
   }
+.tabs .indicator{
+z-index:1;
+}
 
   .parallax img {
     transform: translate3d(-53%,450.47px,0)!important;
@@ -880,4 +888,12 @@ and (orientation: landscape) {
 
 li label{
   padding-left: 25px !important;
+}
+
+.tabs .tab a.active{
+	z-index:9999999999;
+	color:#fff;
+}
+.tabs .tab a{
+	z-index:99999999;
 }
