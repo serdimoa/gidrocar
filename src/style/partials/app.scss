@@ -142,7 +142,7 @@ nav {
   margin-top: 15px;
 }
 
-#index-banner {
+#indexbanner {
   h1 {
     font-family: "Conv_BloggerSans", Georgia, sans-serif;
   }
@@ -354,9 +354,16 @@ ul {
 
 }
 
-
+.tabs{
+  height: 70px;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
 .tabs .tab{
   z-index: 5;
+  height: 70px;
 }
 [type=checkbox] + label, [type=radio]:checked + label, [type=radio]:not(:checked) + label {
   font-weight: 300;
@@ -577,7 +584,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     bottom: 0 !important;
     top: auto !important;
   }
-  #index-banner {
+  #indexbanner {
     height: 568px;
   }
   .section {
@@ -675,7 +682,7 @@ and (-webkit-min-device-pixel-ratio: 2){
   .hide-on-l-only{
     display: none;
   }
-  #index-banner h1 {
+  #indexbanner h1 {
     margin-top: 1.5em;
     font-size: 6.2em;
 
@@ -722,7 +729,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
-  #index-banner {
+  #indexbanner {
     height: 980px;
   }
 .tabs .indicator{

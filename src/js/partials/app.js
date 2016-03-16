@@ -7,7 +7,7 @@ $(document).ready(function () {
     if (bowser.ios || bowser.safari) {
         $("#phone").addClass("iosfontfix");
         $("#h4ios").addClass("iosfontfix");
-        $("#index-banner h1, #time h2, .header, #calc h4, #calc h4 span, #clean h4, #clean p span, #time p span").addClass("iosfontfix");
+        $("#index_banner h1, #time h2, .header, #calc h4, #calc h4 span, #clean h4, #clean p span, #time p span").addClass("iosfontfix");
         $(".menuul").hide();
         $('.price-sm-show').css("opacity", 1);
         $('.tabs .indicator').css({"height":"10%"});
